@@ -1,0 +1,72 @@
+@charset "UTF-8";
+/*
+COLORS
+
+f34213
+2e2e3a
+bc5d2e
+bbb8b2
+*/
+:root{
+   /*------- COLORS -------*/
+   --myred: #f34213;
+   --myblack: #2e2e3a;
+   --myorange: #bc5d2e;
+   --mygrey: #bbb8b2;
+   --clrHeaderBG: black;
+   --clrHeaderF: white;
+   --clrFooterBG: black;
+   --clrFooterF: white;
+}
+
+*{
+   padding: 0px;
+   margin: 0px;
+   font-family: Arial, Verdana, Tahoma, 'Trebuchet MS', 'Times New Roman', Georgia, Garamond, 'Courier New', 'Brush Script MT';
+}
+
+div#header{
+   background-color: var(--clrHeaderBG);
+   color: var(--clrHeaderF)
+}
+
+header{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 20vh;
+}
+
+nav > ul > li{
+   display: inline-block;
+}
+
+section#intro_banner{
+   background-color: var(--myblack);
+}
+
+div#presentment{
+   background-color: var(--myorange);
+}
+
+article#characteristics{
+   background-color: var(--myred);
+}
+
+section#history{
+   background-color: var(--myblack);
+}
+
+section#skills{
+   background-color: var(--myred);
+}
+
+section#disadvantages{
+   background-color: var(--myorange);
+}
+
+footer{
+   height: 10vh;
+   background-color: var(--clrFooterBG);
+   color: var(--clrFooterF);
+}
