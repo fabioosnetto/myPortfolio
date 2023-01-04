@@ -82,6 +82,7 @@ bbb8b2
 
 div#header{
    background-color: var(--clrHeaderBG);
+   background-image: url(../images/93ECF603-0F4C-48A8-951D-346BB2710C84.jpg);
    color: var(--clrHeaderF)
 }
 
