@@ -7,6 +7,57 @@ f34213
 bc5d2e
 bbb8b2
 */
+
+@font-face {
+   font-family: 'myCursive_1';
+   src: url(../fonts/cursive/Dr_Sugiyama/DrSugiyama-Regular.ttf) format('truetype');
+}
+
+@font-face {
+   font-family: 'myCursive_2';
+   src: url(../fonts/cursive/Pinyon_Script/PinyonScript-Regular.ttf) format('truetype');
+}
+
+@font-face {
+   font-family: 'myCursive_3';
+   src: url(../fonts/cursive/Tangerine/Tangerine-Regular.ttf) format('truetype');
+}
+
+@font-face {
+   font-family: 'myCursive_4';
+   src: url(../fonts/cursive/WindSong/WindSong-Regular.ttf) format('truetype');
+}
+
+@font-face {
+   font-family: 'mySansSerif_1';
+   src: url(../fonts/sans-serif/Maven_Pro/MavenPro-VariableFont_wght.ttf) format('truetype');
+}
+
+@font-face {
+   font-family: 'mySansSerif_2';
+   src: url(../fonts/sans-serif/Orbitron/Orbitron-VariableFont_wght.ttf) format('truetype');
+}
+
+@font-face {
+   font-family: 'mySansSerif_3';
+   src: url(../fonts/sans-serif/Rajdhani/Rajdhani-Regular.ttf) format('truetype');
+}
+
+@font-face {
+   font-family: 'mySerif_1';
+   src: url(../fonts/serif/Bodoni_Moda/BodoniModa-VariableFont_opsz\,wght.ttf) format('truetype');
+}
+
+@font-face {
+   font-family: 'mySerif_2';
+   src: url(../fonts/serif/Crimson_Text/CrimsonText-Regular.ttf) format('truetype');
+}
+
+@font-face {
+   font-family: 'mySerif_3';
+   src: url(../fonts/serif/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf) format('truetype');
+}
+
 :root{
    /*------- COLORS -------*/
    --myred: #f34213;
@@ -25,16 +76,25 @@ bbb8b2
    font-family: Arial, Verdana, Tahoma, 'Trebuchet MS', 'Times New Roman', Georgia, Garamond, 'Courier New', 'Brush Script MT';
 }
 
+.display_flex{
+   display: flex;
+}
+
 div#header{
    background-color: var(--clrHeaderBG);
    color: var(--clrHeaderF)
 }
 
 header{
-   display: flex;
    align-items: center;
    justify-content: center;
    height: 20vh;
+}
+
+header > h1{
+   font-family: 'myCursive_3';
+   font-size: 3.5em;
+   text-shadow: .2vw .2vw var(--myorange);
 }
 
 nav > ul > li{
@@ -43,6 +103,23 @@ nav > ul > li{
 
 section#intro_banner{
    background-color: var(--myblack);
+   background-image: url(../images/photo1-500-blur-vignette.jpg);
+   background-size: cover;
+   background-position: left;
+   background-attachment: fixed;
+   box-shadow: inset 5vw 5vw 5vw rgba(0, 0, 0, 0.671);
+}
+div#intro_banner_txt{
+   flex-direction: column;
+   justify-content: space-around;
+   padding: 1em;
+   line-height: 3em;
+   margin-left: 50vw;
+}
+div#intro_banner_txt > p{
+   font-family: 'mySansSerif_3';
+   font-size: 4vw;
+   color: white;
 }
 
 div#presentment{
@@ -69,4 +146,8 @@ footer{
    height: 10vh;
    background-color: var(--clrFooterBG);
    color: var(--clrFooterF);
+}
+
+footer > p, footer > p > b{
+   font-family: 'mySerif_1';
 }
