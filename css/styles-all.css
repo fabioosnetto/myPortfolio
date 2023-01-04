@@ -87,7 +87,8 @@ bbb8b2
 
 div#header{
    background-color: var(--clrHeaderBG);
-   color: var(--clrHeaderF)
+   color: var(--clrHeaderF);
+   box-shadow: 0vw .1vh 2.5vh 2.5vh black;
 }
 
 header{
@@ -106,20 +107,20 @@ nav > ul > li{
    display: inline-block;
 }
 
-div#intro_banner_container{
+div#intro_banner_bg{
    background-color: var(--myblack);
    background-image: url(../images/photo1-500-blur-vignette.jpg);
    background-size: 135vw;
    background-repeat: no-repeat;
    background-position: left;
-   top: -10vh;
+   top: -15vw;
    height: 145vw;
    width: 100vw;
 }
 
 section#intro_banner{
    background-color: transparent;
-   box-shadow: inset 5vw 5vw 5vw rgba(0, 0, 0, 0.671);
+   box-shadow: inset 5vw 6vh 7vw 3vw rgba(0, 0, 0, 0.815);
 }
 
 div#intro_banner_txt{
