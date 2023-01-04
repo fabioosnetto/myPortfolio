@@ -80,6 +80,11 @@ bbb8b2
    display: flex;
 }
 
+.bgFixed{
+   position: fixed;
+   z-index: -1000;
+}
+
 div#header{
    background-color: var(--clrHeaderBG);
    color: var(--clrHeaderF)
@@ -101,15 +106,22 @@ nav > ul > li{
    display: inline-block;
 }
 
-section#intro_banner{
+div#intro_banner_container{
    background-color: var(--myblack);
    background-image: url(../images/photo1-500-blur-vignette.jpg);
-   background-size: cover;
+   background-size: 135vw;
    background-repeat: no-repeat;
    background-position: left;
-   /*background-attachment: fixed;*/
+   top: -10vh;
+   height: 145vw;
+   width: 100vw;
+}
+
+section#intro_banner{
+   background-color: transparent;
    box-shadow: inset 5vw 5vw 5vw rgba(0, 0, 0, 0.671);
 }
+
 div#intro_banner_txt{
    flex-direction: column;
    justify-content: space-around;
