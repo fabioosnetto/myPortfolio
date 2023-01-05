@@ -85,6 +85,10 @@ bbb8b2
    z-index: -1000;
 }
 
+.mobile_block{
+   display: none;
+}
+
 div#header{
    background-color: var(--clrHeaderBG);
    color: var(--clrHeaderF);
@@ -140,8 +144,66 @@ div#presentment{
    background-color: var(--myorange);
 }
 
+div#cold{
+   background-color: white;
+   background-image: url(../images/photo2-500.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center center;
+   height: 40vw;
+   width: 40vw;
+
+   border-radius: 0px 10px 10px 0px;
+}
+
+div#big_big{
+   background-color: var(--myblack);
+   color: white;
+}
+
+div#emote{
+   background-color: white;
+   background-image: url(../images/photo3-500.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center center;
+   height: 40vw;
+   width: 40vw;
+
+   border-radius: 10px 0px 0px 10px;
+}
+
+div#optimism > p{
+   width: 33vw;
+}
+
+div#joker{
+   background-color: white;
+   background-image: url(../images/photo4-500.jpg);
+   background-size: cover;
+   background-position: center center;
+   height: 66vw;
+   width: 33vw;
+}
+
+div#seriousness{
+   background-color: white;
+   background-image: url(../images/photo5-700.jpg);
+   background-size: cover;
+   background-position: center center;
+   height: 66vw;
+   width: 96.5vw;
+}
+
 article#characteristics{
    background-color: var(--myred);
+}
+
+section#perfectionism{
+   background-color: white;
+   background-image: url(../images/photo6.jpg);
+   background-size: cover;
+   height: 66vw;
 }
 
 section#history{
