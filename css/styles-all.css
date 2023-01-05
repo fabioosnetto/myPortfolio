@@ -114,15 +114,22 @@ nav > ul > li{
 div#intro_banner_bg{
    background-color: var(--myblack);
    background-image: url(../images/photo1-500-blur-vignette.jpg);
-   background-size: 135vw;
+   background-size: cover;
    background-repeat: no-repeat;
    background-position: left;
-   top: -15vw;
-   height: 145vw;
+
+   top: -10vh;
+   
+   min-height: 200px;
+   height: 130vh;
+   
+   min-width: 100px;
    width: 100vw;
 }
 
 section#intro_banner{
+   justify-content: end;
+   align-items: center;
    background-color: transparent;
    box-shadow: inset 5vw 6vh 7vw 3vw rgba(0, 0, 0, 0.815);
 }
@@ -132,16 +139,31 @@ div#intro_banner_txt{
    justify-content: space-around;
    padding: 1em;
    line-height: 3em;
-   margin-left: 50vw;
 }
 div#intro_banner_txt > p{
    font-family: 'mySansSerif_3';
-   font-size: 4vw;
+   font-size: 5vw;
    color: white;
 }
 
 div#presentment{
    background-color: var(--myorange);
+}
+
+p#presentment_intro{
+   font-family: 'mySansSerif_1';
+   font-size: 5vw;
+
+   padding: 2em;
+   text-align: center;
+}
+
+div#cold_emote{
+   justify-content: space-between;
+   align-content: space-between;
+   flex-wrap: nowrap;
+
+   margin-bottom: 3em;
 }
 
 div#cold{
@@ -151,14 +173,27 @@ div#cold{
    background-repeat: no-repeat;
    background-position: center center;
    height: 40vw;
-   width: 40vw;
+   width: 30vw;
 
-   border-radius: 0px 10px 10px 0px;
+   border-radius: 0px 21% 15px 0px;
+   box-shadow: .2vw .2vw 2vw .5vw rgba(50, 36, 180, 0.753);
 }
 
 div#big_big{
    background-color: var(--myblack);
+   height: 40vw;
+   width: 33vw;
+
+   border-radius: 21% 21% 15px 15px;
+   box-shadow: 1vw .5vw 2vw .5vw rgba(255, 0, 200, 0.267);
+}
+
+div#big_big > p{
+   font-family: 'mySansSerif_1';
    color: white;
+   font-size: 6vw;
+   text-align: center;
+   margin-top: 5.5vw;
 }
 
 div#emote{
@@ -168,9 +203,10 @@ div#emote{
    background-repeat: no-repeat;
    background-position: center center;
    height: 40vw;
-   width: 40vw;
+   width: 30vw;
 
-   border-radius: 10px 0px 0px 10px;
+   border-radius: 21% 0px 0px 15px;
+   box-shadow: .2vw .2vw 2vw .5vw rgb(255, 68, 0);
 }
 
 div#optimism > p{
