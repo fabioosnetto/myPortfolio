@@ -14,5 +14,6 @@ header > h1{
 }
 
 section#intro_banner{
+   max-height: 69vh;
    height: 90vw;
 }

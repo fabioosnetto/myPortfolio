@@ -155,12 +155,17 @@ div#intro_banner_bg{
 section#intro_banner{
    background-color: transparent;
    box-shadow: inset 5vw 6vh 7vw 3vw rgba(0, 0, 0, 0.815);
+   max-height: 69vh;
    height: 90vw;
+
+   flex-direction: column;
 }
 
 div#intro_banner_txt{
    padding: 1em;
    line-height: 3em;
+
+   align-self: flex-end;
 }
 
 div#intro_banner_txt > h2{
@@ -168,9 +173,8 @@ div#intro_banner_txt > h2{
    font-size: 7vw;
    color: white;
 
-   padding: 1em;
+   padding: 1em 0em 1em 0em;
    text-align: left;
-   margin-left: 21vw;
 }
 
 div#intro_banner_txt > p{
@@ -178,12 +182,16 @@ div#intro_banner_txt > p{
    font-size: 5.2vw;
    color: white;
 
+   padding: .5em 0em .5em 0em;
    text-align: left;
-   margin-left: 27vw;
-   margin-top: 10vw;
 }
 
-section#intro_banner > p > a{
+div#intro_banner_href{
+   position: absolute;
+   bottom: 4em;
+}
+
+div#intro_banner_href > p > a{
    font-family: 'mySansSerif_1';
    font-size: 2.5vw;
    color: white;
@@ -192,16 +200,15 @@ section#intro_banner > p > a{
    text-align: left;
 }
 
-section#intro_banner > p > a:hover{
+div#intro_banner_href > p > a:hover{
    text-decoration-style: solid;
    text-decoration-line: underline;
    text-decoration-color: var(--mygrey);
    color: var(--mygrey);
 }
 
-section#intro_banner > p{
+div#intro_banner_href > p{
    padding: 1em;
-   margin-top: 13vw;
 }
 
 div#presentment{
@@ -272,7 +279,8 @@ div#optimism{
    color: white;
 
    min-height: 250px;
-   height: 60vh;
+   max-height: 70vh;
+   height: 60vw;
    width: 96.5vw;
 
    align-items: center;
@@ -284,7 +292,8 @@ div#optimism > p{
    background-color: rgb(5, 5, 5);
 
    font-family: 'mySansSerif_1';
-   font-size: 4.5vw;
+   
+   font-size: 1.4em;
    
    height: 25vh;
 
