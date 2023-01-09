@@ -155,9 +155,9 @@ div#intro_banner_bg{
 section#intro_banner{
    background-color: transparent;
    box-shadow: inset 5vw 6vh 7vw 3vw rgba(0, 0, 0, 0.815);
-   max-height: 69vh;
+   max-height: 440px;
    height: 90vw;
-
+   position: relative;
    flex-direction: column;
 }
 
@@ -188,7 +188,8 @@ div#intro_banner_txt > p{
 
 div#intro_banner_href{
    position: absolute;
-   bottom: 4em;
+   bottom: 0px;
+   left: 0px;
 }
 
 div#intro_banner_href > p > a{
@@ -278,8 +279,7 @@ div#optimism{
    background-color: black;
    color: white;
 
-   min-height: 250px;
-   max-height: 70vh;
+   max-height: 480px;
    height: 60vw;
    width: 96.5vw;
 
@@ -293,9 +293,11 @@ div#optimism > p{
 
    font-family: 'mySansSerif_1';
    
-   font-size: 1.4em;
+   font-size: 4.5vw;
    
-   height: 25vh;
+   max-height: 180px;
+   height: 30vw;
+   width: 25vw;
 
    padding: 1em 1em 2.5em 1em;
    text-align: center;
@@ -306,8 +308,9 @@ div#joker{
    background-image: url(../images/photo4-500.jpg);
    background-size: cover;
    background-position: center center;
-   height: 40vh;
-   width: 60vw;
+   max-height: 327px;
+   height: 50vw;
+   width: 33vw;
 
    border-top-style: solid;
    border-top-width: .5vw;
@@ -318,6 +321,7 @@ div#joker{
    border-radius: 10px;
 
    box-shadow: inset 1vw 1vw 4vw 3vw rgba(0, 0, 0, 0.637);
+   box-shadow: .5vw .5vw 4vw 3vw rgba(255, 68, 0, 0.151);
 }
 
 div#seriousness{
@@ -368,13 +372,20 @@ section#individualism{
    background-color: white;
    background-image: url(../images/C5FED4DD-B474-47E1-8A80-4C2FA8EA7FE4.jpg);
    background-size: cover;
-   height: 66vh;
+
+   max-height: 500px;
+   height: 75vw;
    align-items: flex-end;
 }
 
-section#individualism > p{
+div#idv_txt_container{
    background-color: rgba(0, 0, 0, 0.678);
+}
+
+div#idv_txt_container > p{
+   background-color: transparent;
    color: var(--mygrey);
+
    font-family: 'mySansSerif_1';
    font-size: 3.5vw;
    padding: 2em;
