@@ -5,8 +5,19 @@
 
 //--- Procedure that Execute another for Reponsiveness Adjustments
 function adjustments(){
+   hOrderFont();
    optimismFont();
    individualism();
+}
+
+//--- Calculates Font Size (based on header 'Order Now' box)
+function hOrderFont(){
+   const orderC     = document.querySelector('div#header_order_now');
+   let orderP       = document.querySelector('a#order_now');
+   let cHeight      = orderC.offsetHeight;
+   let rel_FontSize = 0.4 * cHeight;
+
+   orderP.style.fontSize = rel_FontSize + 'px';  
 }
 
 //--- Calculates the Font Size for Optimism Div
@@ -23,9 +34,9 @@ function optimismFont(){
 
 //--- Call Procedures for Individualism Section
 function individualism(){
-   const idvContainer = document.querySelector('section#individualism');
-   let containerHeight = idvContainer.offsetHeight;
-   let idvParagraph = document.querySelector('div#idv_txt_container > p');
+   const idvContainer        = document.querySelector('section#individualism');
+   let containerHeight       = idvContainer.offsetHeight;
+   let idvParagraph          = document.querySelector('div#idv_txt_container > p');
    let idvParagraphContainer = document.querySelector('div#idv_txt_container');
    
    

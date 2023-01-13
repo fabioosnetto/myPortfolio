@@ -121,15 +121,54 @@ div#header{
 }
 
 header{
-   align-items: center;
+   align-content: center;
    justify-content: center;
+   position: relative;
    height: 20vh;
 }
 
 header > h1{
+   align-self: center;
+   justify-self: center;
    font-family: 'myCursive_3';
    font-size: 3.5em;
    text-shadow: .2vw .2vw var(--myorange);
+}
+
+div#header_order_now{
+   max-height: 40px;
+   height: 7vw;
+   max-width: 102.85px;
+   width: 18vw;
+   position: absolute;
+   top: 0px;
+   right: 0px;
+
+   border-style: solid;
+   border-width: 1px;
+   border-color: var(--mygrey);
+   border-top-color: transparent;
+   border-right-color: transparent;
+}
+
+div#header_order_now:hover{
+   background-color: var(--myorange);
+   border-left-color: var(--myred);
+   border-bottom-color: var(--myred);
+   transform: translate(1px, 3px);
+   transition-duration: .3s;
+   transition-delay: .2s;
+}
+
+div#header_order_now > p{
+   padding: .5em;
+}
+
+div#header_order_now > p > a{
+   font-family: 'mySansSerif_1';
+   font-size: 3vw;
+   color: white;
+   text-decoration: none;
 }
 
 nav > ul > li{
@@ -138,12 +177,12 @@ nav > ul > li{
 
 div#intro_banner_bg{
    background-color: var(--myblack);
-   background-image: url(../images/photo1-500-blur-vignette.jpg);
+   background-image: url(../images/intro_banner-edited.jpg);
    background-size: cover;
    background-repeat: no-repeat;
-   background-position: left;
+   background-position: bottom left;
 
-   top: -10vh;
+   top: -5vh;
    
    min-height: 200px;
    height: 130vh;
@@ -171,19 +210,22 @@ div#intro_banner_txt{
 div#intro_banner_txt > h2{
    font-family: 'mySansSerif_3';
    font-size: 7vw;
-   color: white;
+   color: rgb(231, 231, 231);
 
    padding: 1em 0em 1em 0em;
    text-align: left;
+   text-shadow: .5vw .5vw 5vw white;
 }
 
 div#intro_banner_txt > p{
+   background-color: rgba(0, 0, 0, 0.089);
    font-family: 'mySansSerif_3';
    font-size: 5.2vw;
    color: white;
 
    padding: .5em 0em .5em 0em;
    text-align: left;
+   border-radius: 10px;
 }
 
 div#intro_banner_href{
@@ -212,7 +254,16 @@ div#intro_banner_href > p{
    padding: 1em;
 }
 
-div#presentment{
+div#parallax_line{
+   background-color: transparent;
+   height: 7px;
+}
+
+/*div#presentment{
+   background-color: var(--myorange);
+}*/
+
+section#improvement{
    background-color: var(--myorange);
 }
 
@@ -229,12 +280,12 @@ div#cold_emote{
    align-content: space-between;
    flex-wrap: nowrap;
 
-   margin-bottom: 4em;
+   padding-bottom: 4em;
 }
 
 div#cold{
    background-color: white;
-   background-image: url(../images/photo2-500.jpg);
+   background-image: url(../images/cold-edited.jpg);
    background-size: cover;
    background-repeat: no-repeat;
    background-position: center center;
@@ -252,6 +303,7 @@ div#big_big{
 
    border-radius: 21% 21% 15px 15px;
    box-shadow: 1vw 2vw 2vw 2vw rgba(255, 0, 200, 0.267);
+   box-shadow: inset .1vw .1vw 5vw rgba(0, 0, 0, 0.281);
 }
 
 div#big_big > p{
@@ -264,7 +316,7 @@ div#big_big > p{
 
 div#emote{
    background-color: white;
-   background-image: url(../images/photo3-500.jpg);
+   background-image: url(../images/emote-edited.jpg);
    background-size: cover;
    background-repeat: no-repeat;
    background-position: center center;
@@ -285,7 +337,7 @@ div#optimism{
 
    align-items: center;
    justify-items: center;
-   box-shadow: 2vw 2vw 5vw 5vw #f34213;
+   box-shadow: 2vw 0vw 5vw 5vw #f344132f;
 }
 
 div#optimism > p{
@@ -305,7 +357,7 @@ div#optimism > p{
 
 div#joker{
    background-color: white;
-   background-image: url(../images/photo4-500.jpg);
+   background-image: url(../images/joker-edited-500.jpg);
    background-size: cover;
    background-position: center center;
    max-height: 327px;
@@ -326,7 +378,7 @@ div#joker{
 
 div#seriousness{
    background-color: white;
-   background-image: url(../images/photo5-700.jpg);
+   background-image: url(../images/seriousness-edited-500.jpg);
    background-size: cover;
    background-position: center center;
    height: 66vw;
@@ -370,7 +422,7 @@ p#char_intro{
 
 section#individualism{
    background-color: white;
-   background-image: url(../images/C5FED4DD-B474-47E1-8A80-4C2FA8EA7FE4.jpg);
+   background-image: url(../images/individualism-edited-500.jpg);
    background-size: cover;
 
    max-height: 500px;
@@ -393,21 +445,53 @@ div#idv_txt_container > p{
    text-align: justify;
 }
 
+section#diversion_attention{
+   background-color: white;
+   background-image: url(../images/diversion_attention-edited-500.jpg);
+   background-size: cover;
+   background-position: center center;
+
+   max-height: 500px;
+   height: 75vw;
+   align-items: center;
+}
+
+div#datt_txt_container{
+   background-color: rgba(0, 0, 0, 0.678);
+}
+
+div#datt_txt_container > p{
+   background-color: transparent;
+   color: var(--mygrey);
+
+   font-family: 'mySansSerif_1';
+   font-size: 3.5vw;
+   padding: 2em;
+
+   text-align: justify;
+}
+
 section#perfectionism{
    background-color: white;
-   background-image: url(../images/photo6.jpg);
+   background-image: url(../images/perfectionism-edited-500.jpg);
    background-size: cover;
    background-position: right;
-   height: 66vh;
+   
+   max-height: 500px;
+   height: 75vw;
    box-shadow: inset 1vw 1vw 6vw 4vw rgba(0, 0, 0, 0.445);
 
    align-items: flex-start;
 }
 
-section#perfectionism > p{
-   
-   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.678) 90%, transparent);
+div#pfct_txt_container{
+   background-color: rgba(0, 0, 0, 0.678);
+}
+
+div#pfct_txt_container > p{
+   background-color: transparent;
    color: var(--mygrey);
+
    font-family: 'mySansSerif_1';
    font-size: 3.5vw;
    padding: 2em;
