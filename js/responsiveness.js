@@ -58,3 +58,39 @@ function individualismFont(txtP, containerH){
 
    txtP.style.fontSize = rel_FontSize + 'px';
 }
+
+//--- Loads the First Slide of 'Characteristics Article'
+function slidesLoad(){
+   let idv = document.querySelector('section#individualism');
+
+   idv.style.display = 'flex';
+}
+
+//--- Changes the Slides of 'Characteristics Article'
+function slidesChange(){
+   let idv = document.querySelector('section#individualism');
+   let dat = document.querySelector('section#diversion_attention');
+   let pft = document.querySelector('section#perfectionism');
+   let dis = idv.style.display == 'none'? (dat.style.display == 'none'? '2' : '1') : '0';
+   
+   switch (dis) {
+      case '0': 
+         idv.style.display = 'none';
+         dat.style.display = 'flex';
+         pft.style.display = 'none';
+      break;
+      case '1':
+         idv.style.display = 'none';
+         dat.style.display = 'none';
+         pft.style.display = 'flex';
+      break;
+      case '2':
+         idv.style.display = 'flex';
+         dat.style.display = 'none';
+         pft.style.display = 'none';
+      break;
+   }
+}
+
+//--- Calls 'slidesChange()'
+setInterval(function(){slidesChange()}, 10000);

@@ -76,6 +76,14 @@ bbb8b2
    font-family: Arial, Verdana, Tahoma, 'Trebuchet MS', 'Times New Roman', Georgia, Garamond, 'Courier New', 'Brush Script MT';
 }
 
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
 .display_flex{
    display: flex;
 }
@@ -132,7 +140,7 @@ header > h1{
    justify-self: center;
    font-family: 'myCursive_3';
    font-size: 3.5em;
-   text-shadow: .2vw .2vw var(--myorange);
+   text-shadow: .2vw .2vw 3vw var(--myorange);
 }
 
 div#header_order_now{
@@ -302,8 +310,7 @@ div#big_big{
    width: 33vw;
 
    border-radius: 21% 21% 15px 15px;
-   box-shadow: 1vw 2vw 2vw 2vw rgba(255, 0, 200, 0.267);
-   box-shadow: inset .1vw .1vw 5vw rgba(0, 0, 0, 0.281);
+   box-shadow: 1vw 1vw 3vw 2vw rgba(255, 0, 200, 0.267), inset .1vw .1vw 5vw rgba(0, 0, 0, 0.281);
 }
 
 div#big_big > p{
@@ -337,6 +344,7 @@ div#optimism{
 
    align-items: center;
    justify-items: center;
+   align-self: center;
    box-shadow: 2vw 0vw 5vw 5vw #f344132f;
 }
 
@@ -411,6 +419,17 @@ div#seriousness > p{
 
 article#characteristics{
    background-color: var(--myred);
+   position: relative;
+}
+
+#char_back{
+   position: absolute;
+   bottom: 170px;
+   color: var(--myorange);
+} 
+
+#char_forward{
+   position: absolute;
 }
 
 p#char_intro{
@@ -427,7 +446,10 @@ section#individualism{
 
    max-height: 500px;
    height: 75vw;
+   box-shadow: inset 2vw 2vw 6vw 4vw rgba(0, 0, 0, 0.445);
+
    align-items: flex-end;
+   display: none;
 }
 
 div#idv_txt_container{
@@ -453,7 +475,10 @@ section#diversion_attention{
 
    max-height: 500px;
    height: 75vw;
+   box-shadow: inset 2vw 2vw 6vw 4vw rgba(0, 0, 0, 0.445);
+
    align-items: center;
+   display: none;
 }
 
 div#datt_txt_container{
@@ -479,9 +504,10 @@ section#perfectionism{
    
    max-height: 500px;
    height: 75vw;
-   box-shadow: inset 1vw 1vw 6vw 4vw rgba(0, 0, 0, 0.445);
+   box-shadow: inset 2vw 2vw 6vw 4vw rgba(0, 0, 0, 0.445);
 
    align-items: flex-start;
+   display: none;
 }
 
 div#pfct_txt_container{

@@ -7,6 +7,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       
       <!--<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">-->
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
       <link rel="stylesheet" href="../css/styles-all.css"     media="screen">
       <link rel="stylesheet" href="../css/styles-768max.css"  media="screen and (max-width: 768px)">
       <link rel="stylesheet" href="../css/styles-768min.css"  media="screen and (min-width: 769px)">
@@ -17,7 +18,7 @@
    </head>
    
    
-   <body onload="adjustments()" onresize="adjustments()">
+   <body onload="adjustments(), slidesLoad()" onresize="adjustments()">
       <div id="header">
          <header class="display_flex">
             <h1>Fabio O.S. Netto</h1>
@@ -87,6 +88,9 @@
                After incessant frustration wth bugs and errors, we noticed that this was poviding competitive advantages. Therefore, they were reinforced and controlled, in order to make bugs, deliberate errors for the consolidation of fundamental advantages.
             </p>
             <div id="char_slides">
+               <span id="char_back" class="material-symbols-outlined">arrow_back_ios</span>
+               <span id="char_forward" class="material-symbols-outlined">arrow_forward_ios</span>
+
                <section id="individualism" class="display_flex">
                   <div id="idv_txt_container">
                      <p><strong>Individualism</strong>: possibily viewed as self-centeredness, brings determination and ambition to do one's best to solve problems in the most adverse situations. It is difficult to ask for help, however, nothing that prevents good teamwork, once everything is well organized.</p>
