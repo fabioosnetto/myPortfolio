@@ -424,14 +424,14 @@ article#characteristics{
 
 #char_back{
    position: absolute;
-   bottom: 140px;
+   bottom: 25vw;
    left: 3px;
    color: rgba(255, 123, 0, 0.288);
 } 
 
 #char_forward{
    position: absolute;
-   bottom: 140px;
+   bottom: 25vw;
    right: 1px;
    color: rgba(255, 123, 0, 0.288);
 }
