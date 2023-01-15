@@ -231,7 +231,7 @@ div#intro_banner_txt > p{
    font-size: 5.2vw;
    color: white;
 
-   padding: .5em 0em .5em 0em;
+   padding: .5em .5em .5em .5em;
    text-align: left;
    border-radius: 10px;
 }

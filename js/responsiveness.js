@@ -15,7 +15,7 @@ function hOrderFont(){
    const orderC     = document.querySelector('div#header_order_now');
    let orderP       = document.querySelector('a#order_now');
    let cHeight      = orderC.clientHeight;
-   let rel_FontSize = 0.4 * cHeight;
+   let rel_FontSize = 0.42 * cHeight;
 
    orderP.style.fontSize = rel_FontSize + 'px';  
 }
@@ -23,7 +23,7 @@ function hOrderFont(){
 //--- Calculates the Font Size for Optimism Div
 function optimismFont(){
    const jokerContainer = window.document.querySelector('div#joker');
-   let containerHeight = jokerContainer.offsetHeight;
+   let containerHeight = jokerContainer.clientHeight;
    let rel_FontSize = 0.09 * containerHeight;
 
    let paragraph_1 = document.querySelector('p#bef_joker');
@@ -35,7 +35,7 @@ function optimismFont(){
 //--- Call Procedures for Individualism Section
 function individualism(){
    const idvContainer        = document.querySelector('section#individualism');
-   let containerHeight       = idvContainer.offsetHeight;
+   let containerHeight       = idvContainer.clientHeight;
    let idvParagraph          = document.querySelector('div#idv_txt_container > p');
    let idvParagraphContainer = document.querySelector('div#idv_txt_container');
    
