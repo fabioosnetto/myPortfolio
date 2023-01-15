@@ -14,7 +14,7 @@ function adjustments(){
 function hOrderFont(){
    const orderC     = document.querySelector('div#header_order_now');
    let orderP       = document.querySelector('a#order_now');
-   let cHeight      = orderC.offsetHeight;
+   let cHeight      = orderC.clientHeight;
    let rel_FontSize = 0.4 * cHeight;
 
    orderP.style.fontSize = rel_FontSize + 'px';  
@@ -60,37 +60,61 @@ function individualismFont(txtP, containerH){
 }
 
 //--- Loads the First Slide of 'Characteristics Article'
-function slidesLoad(){
+function charSlidesLoad(){
    let idv = document.querySelector('section#individualism');
-
+   
    idv.style.display = 'flex';
+   charSlideMarker('mk_1');
 }
 
 //--- Changes the Slides of 'Characteristics Article'
-function slidesChange(){
+function charSlidesChange(){
    let idv = document.querySelector('section#individualism');
    let dat = document.querySelector('section#diversion_attention');
    let pft = document.querySelector('section#perfectionism');
-   let dis = idv.style.display == 'none'? (dat.style.display == 'none'? '2' : '1') : '0';
+   let mk_id;
+
+   idv.style.display == 'none'? (dat.style.display == 'none'? mk_id='mk_1' : mk_id='mk_3') : mk_id='mk_2';
+   dis = idv.style.display == 'none'? (dat.style.display == 'none'? idv : pft) : dat;
    
-   switch (dis) {
-      case '0': 
-         idv.style.display = 'none';
-         dat.style.display = 'flex';
-         pft.style.display = 'none';
-      break;
-      case '1':
-         idv.style.display = 'none';
-         dat.style.display = 'none';
-         pft.style.display = 'flex';
-      break;
-      case '2':
-         idv.style.display = 'flex';
-         dat.style.display = 'none';
-         pft.style.display = 'none';
-      break;
-   }
+   idv.style.display = 'none';
+   dat.style.display = 'none';
+   pft.style.display = 'none';
+
+   dis.style.display = 'flex';
+   charSlideMarker(mk_id);
+}
+
+function charSlideMarker(_mk_id){
+   document.getElementById('mk_1').style.backgroundColor = 'rgba(128, 128, 128, 0.3)';
+   document.getElementById('mk_2').style.backgroundColor = 'rgba(128, 128, 128, 0.3)';
+   document.getElementById('mk_3').style.backgroundColor = 'rgba(128, 128, 128, 0.3)';
+   document.getElementById(_mk_id).style.backgroundColor = 'rgba(128, 128, 128, 1.0)';
 }
 
 //--- Calls 'slidesChange()'
-setInterval(function(){slidesChange()}, 10000);
+setInterval(function(){charSlidesChange()}, 10000);
+
+//--- Characteristics Button Click
+function charButtonClick(direction){
+   let idv = document.querySelector('section#individualism');
+   let dat = document.querySelector('section#diversion_attention');
+   let pft = document.querySelector('section#perfectionism');
+   let dis;
+   let mk_id;
+
+   if(direction == 'back'){
+      dis = idv.style.display == 'none'? (dat.style.display == 'none'? dat : idv) : pft;
+      idv.style.display == 'none'? (dat.style.display == 'none'? mk_id='mk_2' : mk_id='mk_1') : mk_id='mk_3';
+   }else{
+      dis = idv.style.display == 'none'? (dat.style.display == 'none'? idv : pft) : dat;
+      idv.style.display == 'none'? (dat.style.display == 'none'? mk_id='mk_1' : mk_id='mk_3') : mk_id='mk_2';
+   }
+
+   idv.style.display = 'none';
+   dat.style.display = 'none';
+   pft.style.display = 'none';
+   
+   dis.style.display = 'flex';
+   charSlideMarker(mk_id);
+}

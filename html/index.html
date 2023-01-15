@@ -18,7 +18,7 @@
    </head>
    
    
-   <body onload="adjustments(), slidesLoad()" onresize="adjustments()">
+   <body onload="adjustments(), charSlidesLoad()" onresize="adjustments()">
       <div id="header">
          <header class="display_flex">
             <h1>Fabio O.S. Netto</h1>
@@ -88,8 +88,15 @@
                After incessant frustration wth bugs and errors, we noticed that this was poviding competitive advantages. Therefore, they were reinforced and controlled, in order to make bugs, deliberate errors for the consolidation of fundamental advantages.
             </p>
             <div id="char_slides">
-               <span id="char_back" class="material-symbols-outlined">arrow_back_ios</span>
-               <span id="char_forward" class="material-symbols-outlined">arrow_forward_ios</span>
+               <button id="char_back" class="char_button" type="button" onclick="charButtonClick('back')"><span class="material-symbols-outlined">arrow_back_ios</span></button>
+               
+               <button id="char_forward" class="char_button" type="button" onclick="charButtonClick('forward')"><span class="material-symbols-outlined">arrow_forward_ios</span></button>
+
+               <div id="slideMK_container" class="display_flex">
+                  <div id="mk_1" class="slide_marker"></div>
+                  <div id="mk_2" class="slide_marker"></div>
+                  <div id="mk_3" class="slide_marker"></div>
+               </div>
 
                <section id="individualism" class="display_flex">
                   <div id="idv_txt_container">
