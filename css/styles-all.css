@@ -159,6 +159,9 @@ div#header_order_now{
    top: 1px;
    right: 3px;
 
+   align-items: center;
+   justify-content: center;
+
    border-style: solid;
    border-width: 1px;
    border-color: var(--mygrey);
@@ -179,10 +182,6 @@ div#header_order_now:hover{
    transition-delay: .2s;
 
    cursor: pointer;
-}
-
-div#header_order_now > p{
-   padding: .5em;
 }
 
 div#header_order_now > p > a{
