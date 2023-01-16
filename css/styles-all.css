@@ -197,7 +197,7 @@ nav > ul > li{
 
 div#intro_banner_bg{
    background-color: var(--myblack);
-   background-image: url(../images/intro_banner-edited.jpg);
+   background-image: url(../images/chose/intro_banner-edited.png);
    background-size: cover;
    background-repeat: no-repeat;
    background-position: bottom left;
@@ -305,7 +305,7 @@ div#cold_emote{
 
 div#cold{
    background-color: white;
-   background-image: url(../images/cold-edited.jpg);
+   background-image: url(../images/chose/cold-edited.png);
    background-size: cover;
    background-repeat: no-repeat;
    background-position: center center;
@@ -339,7 +339,7 @@ div#big_big > p{
 
 div#emote{
    background-color: white;
-   background-image: url(../images/emote-edited.jpg);
+   background-image: url(../images/chose/emote-edited.png);
    background-size: cover;
    background-repeat: no-repeat;
    background-position: center center;
@@ -383,7 +383,7 @@ div#optimism > p{
 
 div#joker{
    background-color: white;
-   background-image: url(../images/joker-edited-500.jpg);
+   background-image: url(../images/chose/joker-edited-150.png);
    background-size: cover;
    background-position: center center;
    max-height: 327px;
@@ -404,7 +404,7 @@ div#joker{
 
 div#seriousness{
    background-color: white;
-   background-image: url(../images/seriousness-edited-500.jpg);
+   background-image: url(../images/chose/seriousness-edited-300.png);
    background-size: cover;
    background-position: center center;
    height: 66vw;
@@ -501,7 +501,7 @@ p#char_intro{
 
 section#individualism{
    background-color: black;
-   background-image: url(../images/individualism-edited-500.jpg);
+   background-image: url(../images/chose/individualism-edited-300.png);
    background-size: cover;
 
    max-height: 500px;
@@ -529,7 +529,7 @@ div#idv_txt_container > p{
 
 section#diversion_attention{
    background-color: black;
-   background-image: url(../images/diversion_attention-edited-500.jpg);
+   background-image: url(../images/chose/diversion_attention-edited-300.png);
    background-size: cover;
    background-position: center center;
 
@@ -558,7 +558,7 @@ div#datt_txt_container > p{
 
 section#perfectionism{
    background-color: black;
-   background-image: url(../images/perfectionism-edited-500.jpg);
+   background-image: url(../images/chose/perfectionism-edited-300.png);
    background-size: cover;
    background-position: right;
    
