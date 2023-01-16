@@ -132,7 +132,8 @@ header{
    align-content: center;
    justify-content: center;
    position: relative;
-   height: 20vh;
+   height: 25vw;
+   max-height: 166px;
 }
 
 header > h1{
@@ -141,6 +142,12 @@ header > h1{
    font-family: 'myCursive_3';
    font-size: 3.5em;
    text-shadow: .2vw .2vw 3vw var(--myorange);
+   transition: text-shadow .5s ease .3s;
+}
+
+header > h1:hover{
+   text-shadow: 1.5vw 1.5vw 10vw var(--myorange);
+   transition: text-shadow .5 ease .3s;
 }
 
 div#header_order_now{
@@ -149,14 +156,18 @@ div#header_order_now{
    max-width: 102.85px;
    width: 18vw;
    position: absolute;
-   top: 0px;
-   right: 0px;
+   top: 1px;
+   right: 3px;
 
    border-style: solid;
    border-width: 1px;
    border-color: var(--mygrey);
    border-top-color: transparent;
    border-right-color: transparent;
+
+   transform: translate(-1px, -3px);
+   transition-duration: .3s;
+   transition-delay: .2s;
 }
 
 div#header_order_now:hover{
@@ -166,6 +177,8 @@ div#header_order_now:hover{
    transform: translate(1px, 3px);
    transition-duration: .3s;
    transition-delay: .2s;
+
+   cursor: pointer;
 }
 
 div#header_order_now > p{
@@ -195,7 +208,6 @@ div#intro_banner_bg{
    min-height: 200px;
    height: 130vh;
    
-   min-width: 100px;
    width: 100vw;
 }
 
@@ -273,6 +285,7 @@ div#parallax_line{
 
 section#improvement{
    background-color: var(--myorange);
+   max-width: 850px;
 }
 
 p#presentment_intro{
@@ -298,7 +311,9 @@ div#cold{
    background-repeat: no-repeat;
    background-position: center center;
    height: 40vw;
+   max-height: 333.594px;
    width: 30vw;
+   max-width: 250.188px;
 
    border-radius: 0px 21% 15px 0px;
    box-shadow: .2vw .2vw 2vw 2vw rgba(50, 36, 180, 0.753);
@@ -307,7 +322,9 @@ div#cold{
 div#big_big{
    background-color: var(--myblack);
    height: 40vw;
-   width: 33vw;
+   max-height: 333.594px;
+   width: 30vw;
+   max-width: 275.219px;
 
    border-radius: 21% 21% 15px 15px;
    box-shadow: 1vw 1vw 3vw 2vw rgba(255, 0, 200, 0.267), inset .1vw .1vw 5vw rgba(0, 0, 0, 0.281);
@@ -328,7 +345,9 @@ div#emote{
    background-repeat: no-repeat;
    background-position: center center;
    height: 40vw;
+   max-height: 333.594px;
    width: 30vw;
+   max-width: 250.188px;
 
    border-radius: 21% 0px 0px 15px;
    box-shadow: .2vw .2vw 2vw 2vw rgb(255, 68, 0);
@@ -432,7 +451,7 @@ article#characteristics{
 #char_forward{
    position: absolute;
    bottom: 25vw;
-   right: 1px;
+   right: 3px;
    color: rgba(255, 123, 0, 0.288);
 }
 

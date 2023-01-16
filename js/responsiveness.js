@@ -14,8 +14,8 @@ function adjustments(){
 function hOrderFont(){
    const orderC     = document.querySelector('div#header_order_now');
    let orderP       = document.querySelector('a#order_now');
-   let cHeight      = orderC.clientHeight;
-   let rel_FontSize = 0.42 * cHeight;
+   let cWidth      = orderC.offsetWidth;
+   let rel_FontSize = 0.16 * cWidth;
 
    orderP.style.fontSize = rel_FontSize + 'px';  
 }
@@ -62,7 +62,9 @@ function individualismFont(txtP, containerH){
 //--- Loads the First Slide of 'Characteristics Article'
 function charSlidesLoad(){
    let idv = document.querySelector('section#individualism');
-   
+   let dat = document.querySelector('section#diversion_attention');
+   let pft = document.querySelector('section#perfectionism');
+
    idv.style.display = 'flex';
    charSlideMarker('mk_1');
 }
