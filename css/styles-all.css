@@ -182,7 +182,6 @@ div#header_order_now:hover{
    transform: translate(1px, 3px);
    transition-duration: .3s;
    transition-delay: .2s;
-
    cursor: pointer;
 }
 
@@ -456,6 +455,10 @@ article#characteristics{
    border-radius: 5px 5px 0px 0px;
 }
 
+div#char_slides{
+   position: relative;
+}
+
 #char_back{
    position: absolute;
    bottom: 25vw;
@@ -509,6 +512,10 @@ article#characteristics{
    border-radius: 5px;
 }
 
+div#mk_1{
+   background-color: rgba(128, 128, 128, 1.0);
+}
+
 p#char_intro{
    font-family: 'mySansSerif_1';
    font-size: 3.5vw;
@@ -526,7 +533,8 @@ section#individualism{
    box-shadow: inset 2vw 2vw 6vw 4vw rgba(0, 0, 0, 0.445);
 
    align-items: flex-end;
-   display: flex;
+
+   transition: opacity 1.3s ease-out;
 }
 
 div#idv_txt_container{
@@ -550,12 +558,17 @@ section#diversion_attention{
    background-size: cover;
    background-position: center center;
 
+   position: absolute;
+   top: 0px;
+
    max-height: 500px;
    height: 75vw;
    box-shadow: inset 2vw 2vw 6vw 4vw rgba(0, 0, 0, 0.445);
 
    align-items: center;
-   display: none;
+
+   opacity: 0;
+   transition: opacity 1.3s ease-out;
 }
 
 div#datt_txt_container{
@@ -578,13 +591,18 @@ section#perfectionism{
    background-image: url(../images/chose/perfectionism-edited-300.png);
    background-size: cover;
    background-position: right;
+
+   position: absolute;
+   top: 0px;
    
    max-height: 500px;
    height: 75vw;
    box-shadow: inset 2vw 2vw 6vw 4vw rgba(0, 0, 0, 0.445);
 
    align-items: flex-start;
-   display: none;
+
+   opacity: 0;
+   transition: opacity 1.3s ease-out;
 }
 
 div#pfct_txt_container{

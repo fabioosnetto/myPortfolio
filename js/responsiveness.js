@@ -65,7 +65,7 @@ function charSlidesLoad(){
    let dat = document.querySelector('section#diversion_attention');
    let pft = document.querySelector('section#perfectionism');
 
-   idv.style.display = 'flex';
+   idv.style.opacity = '1';
    charSlideMarker('mk_1');
 }
 
@@ -76,14 +76,14 @@ function charSlidesChange(){
    let pft = document.querySelector('section#perfectionism');
    let mk_id;
 
-   idv.style.display == 'none'? (dat.style.display == 'none'? mk_id='mk_1' : mk_id='mk_3') : mk_id='mk_2';
-   dis = idv.style.display == 'none'? (dat.style.display == 'none'? idv : pft) : dat;
+   idv.style.opacity == '0'? (dat.style.opacity == '0'? mk_id='mk_1' : mk_id='mk_3') : mk_id='mk_2';
+   dis = idv.style.opacity == '0'? (dat.style.opacity == '0'? idv : pft) : dat;
    
-   idv.style.display = 'none';
-   dat.style.display = 'none';
-   pft.style.display = 'none';
+   idv.style.opacity    = '0';
+   dat.style.opacity    = '0';
+   pft.style.opacity    = '0';
 
-   dis.style.display = 'flex';
+   dis.style.opacity    = '1';
    charSlideMarker(mk_id);
 }
 
@@ -106,17 +106,17 @@ function charButtonClick(direction){
    let mk_id;
 
    if(direction == 'back'){
-      dis = idv.style.display == 'none'? (dat.style.display == 'none'? dat : idv) : pft;
-      idv.style.display == 'none'? (dat.style.display == 'none'? mk_id='mk_2' : mk_id='mk_1') : mk_id='mk_3';
+      dis = idv.style.opacity == '0'? (dat.style.opacity == '0'? dat : idv) : pft;
+      idv.style.opacity == '0'? (dat.style.opacity == '0'? mk_id='mk_2' : mk_id='mk_1') : mk_id='mk_3';
    }else{
-      dis = idv.style.display == 'none'? (dat.style.display == 'none'? idv : pft) : dat;
-      idv.style.display == 'none'? (dat.style.display == 'none'? mk_id='mk_1' : mk_id='mk_3') : mk_id='mk_2';
+      dis = idv.style.opacity == '0'? (dat.style.opacity == '0'? idv : pft) : dat;
+      idv.style.opacity == '0'? (dat.style.opacity == '0'? mk_id='mk_1' : mk_id='mk_3') : mk_id='mk_2';
    }
 
-   idv.style.display = 'none';
-   dat.style.display = 'none';
-   pft.style.display = 'none';
+   idv.style.opacity = '0';
+   dat.style.opacity = '0';
+   pft.style.opacity = '0';
    
-   dis.style.display = 'flex';
+   dis.style.opacity = '1';
    charSlideMarker(mk_id);
 }
