@@ -86,14 +86,6 @@ bbb8b2
    font-family: Arial, Verdana, Tahoma, 'Trebuchet MS', 'Times New Roman', Georgia, Garamond, 'Courier New', 'Brush Script MT';
 }
 
-.material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 800,
-  'GRAD' 0,
-  'opsz' 48
-}
-
 .display_flex{
    display: flex;
 }
