@@ -197,6 +197,10 @@ nav > ul > li{
    display: inline-block;
 }
 
+main{
+   flex-direction: column;
+}
+
 div#intro_banner_bg{
    background-color: var(--myblack);
    background-image: url(../images/chose/intro_banner-edited.png);
@@ -287,6 +291,8 @@ div#parallax_line{
 section#improvement{
    background-color: var(--myorange);
    max-width: 850px;
+   margin: auto;
+   box-sizing: border-box;
 }
 
 p#presentment_intro{
@@ -361,7 +367,9 @@ div#optimism{
    max-height: 480px;
    height: 60vw;
    width: 96.5vw;
+   max-width: 850px;
 
+   margin: auto;
    align-items: center;
    justify-items: center;
    align-self: center;
@@ -411,7 +419,9 @@ div#seriousness{
    background-position: center center;
    height: 66vw;
    width: 96.5vw;
+   max-width: 850px;
 
+   margin: auto;
    align-items: flex-end;
    justify-content: center;
    box-shadow: inset 3vw 3vw 4vw 4vw rgba(0, 0, 0, 0.815);
@@ -440,6 +450,10 @@ div#seriousness > p{
 article#characteristics{
    background-color: var(--myred);
    position: relative;
+   margin: auto;
+   max-width: 850px;
+
+   border-radius: 5px 5px 0px 0px;
 }
 
 #char_back{
@@ -482,6 +496,7 @@ article#characteristics{
    position: absolute;
    bottom: 5px;
    width: 96.5vw;
+   max-width: 850px;
    align-items: center;
    justify-content: space-evenly;
 }
@@ -511,7 +526,7 @@ section#individualism{
    box-shadow: inset 2vw 2vw 6vw 4vw rgba(0, 0, 0, 0.445);
 
    align-items: flex-end;
-   display: none;
+   display: flex;
 }
 
 div#idv_txt_container{
@@ -589,14 +604,24 @@ div#pfct_txt_container > p{
 
 section#history{
    background-color: var(--myblack);
+   max-width: 850px;
+   margin: auto;
 }
 
 section#skills{
    background-color: var(--myred);
+   max-width: 850px;
+   margin: auto;
+}
+
+section#skills > ul{
+   list-style: none;
 }
 
 section#disadvantages{
    background-color: var(--myorange);
+   max-width: 850px;
+   margin: auto;
 }
 
 footer{

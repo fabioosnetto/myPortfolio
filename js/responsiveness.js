@@ -35,18 +35,18 @@ function optimismFont(){
 //--- Call Procedures for Individualism Section
 function individualism(){
    const idvContainer        = document.querySelector('section#individualism');
-   let containerHeight       = idvContainer.clientHeight;
+   let containerHeight       = idvContainer.offsetHeight;
    let idvParagraph          = document.querySelector('div#idv_txt_container > p');
    let idvParagraphContainer = document.querySelector('div#idv_txt_container');
    
    
-   individualismFont(idvParagraph, function(){individualismText(idvParagraphContainer, containerHeight)});
+   individualismFont(idvParagraph, individualismText(idvParagraphContainer, containerHeight));
 }
 
 //--- Calculates the Text Box Height
 function individualismText(textP, containerH){
    let rel_pHeight = 0.4 * containerH;
-
+   
    textP.style.height = rel_pHeight + 'px';
 
    return(rel_pHeight);
@@ -95,7 +95,7 @@ function charSlideMarker(_mk_id){
 }
 
 //--- Calls 'slidesChange()'
-setInterval(function(){charSlidesChange()}, 10000);
+setInterval(function(){charSlidesChange(); individualism();}, 10000);
 
 //--- Characteristics Button Click
 function charButtonClick(direction){
