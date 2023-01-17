@@ -11,51 +11,61 @@ bbb8b2
 @font-face {
    font-family: 'myCursive_1';
    src: url(../fonts/cursive/Dr_Sugiyama/DrSugiyama-Regular.ttf) format('truetype');
+   font-display: fallback;
 }
 
 @font-face {
    font-family: 'myCursive_2';
    src: url(../fonts/cursive/Pinyon_Script/PinyonScript-Regular.ttf) format('truetype');
+   font-display: fallback;
 }
 
 @font-face {
    font-family: 'myCursive_3';
    src: url(../fonts/cursive/Tangerine/Tangerine-Regular.ttf) format('truetype');
+   font-display: fallback;
 }
 
 @font-face {
    font-family: 'myCursive_4';
    src: url(../fonts/cursive/WindSong/WindSong-Regular.ttf) format('truetype');
+   font-display: fallback;
 }
 
 @font-face {
    font-family: 'mySansSerif_1';
    src: url(../fonts/sans-serif/Maven_Pro/MavenPro-VariableFont_wght.ttf) format('truetype');
+   font-display: fallback;
 }
 
 @font-face {
    font-family: 'mySansSerif_2';
    src: url(../fonts/sans-serif/Orbitron/Orbitron-VariableFont_wght.ttf) format('truetype');
+   font-display: fallback;
 }
 
 @font-face {
    font-family: 'mySansSerif_3';
    src: url(../fonts/sans-serif/Rajdhani/Rajdhani-Regular.ttf) format('truetype');
+   font-display: fallback;
 }
 
 @font-face {
    font-family: 'mySerif_1';
    src: url(../fonts/serif/Bodoni_Moda/BodoniModa-VariableFont_opsz\,wght.ttf) format('truetype');
+   font-display: fallback;
 }
 
 @font-face {
    font-family: 'mySerif_2';
    src: url(../fonts/serif/Crimson_Text/CrimsonText-Regular.ttf) format('truetype');
+   font-display: fallback;
 }
 
 @font-face {
    font-family: 'mySerif_3';
    src: url(../fonts/serif/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf) format('truetype');
+   font-display: fallback;
 }
 
 :root{
