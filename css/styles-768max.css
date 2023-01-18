@@ -5,10 +5,6 @@
    display: none;
 }
 
-.mobile_block{
-   display: block;
-}
-
 header > h1{
    font-size: 9vw;
 }

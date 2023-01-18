@@ -1,2 +1,104 @@
 @charset "UTF-8";
 @import url(styles-all.css);
+
+.row{
+   flex-direction: row;
+   flex-wrap: wrap;
+}
+
+.column{
+   flex-direction: column;
+}
+
+section#improvement{
+   max-width: 100vw;
+   flex-direction: row;
+   position: relative;
+}
+
+p#presentment_intro{
+   width: 25vw;
+   max-width: 320px;
+
+   font-size: 4vw;
+}
+
+p#cutting_edge{
+   display: block;
+   background-color: var(--mygrey);
+   max-width: 750px;
+
+   font-size: 2.5vw;
+   padding: 4vw 3vw 3vw 3vw;
+   font-variant: small-caps;
+   text-align: justify;
+}
+
+p#cutting_edge > strong{
+   font-weight: normal;
+   color: var(--myred);
+}
+
+div#cold_emote{
+   width: 46vw;
+   max-width: 630px;
+
+   position: absolute;
+   bottom: 0px;
+   align-self: center;
+}
+
+div#cold{
+   height: 20vw;
+   max-height: 250px;
+   width: 14vw;
+   max-width: 178px;
+
+   margin-right: 15px;
+   align-self: flex-end;
+
+   transition: 2s ease-out;
+}
+
+div#cold:hover{
+   box-shadow: .2vw .2vw 5vw 2vw rgb(31, 17, 155);
+   transform: translate(0px, -10px);
+   transition: 2s ease;
+}
+
+div#big_big{
+   height: 20vw;
+   max-height: 250px;
+   width: 18vw;
+   max-width: 178px;
+
+   margin-right: 15px;
+   transform: translate(0px, -5px);
+   transition: 2s ease-out;
+}
+
+div#big_big:hover{
+   box-shadow: 1vw 1vw 5vw 2vw rgba(255, 0, 200, 0.596), inset .1vw .1vw 5vw rgba(0, 0, 0, 0.281);;
+   transform: translate(0px, 10px);
+   transition: 2s ease;
+}
+
+div#big_big > p{
+   font-size: 3vw;
+   margin-top: 3vw;
+}
+
+div#emote{
+   height: 20vw;
+   max-height: 250px;
+   width: 14vw;
+   max-width: 178px;
+
+   transition: 2s ease-out;
+}
+
+div#emote:hover{
+   box-shadow: .2vw .2vw 5vw 2vw rgb(255, 38, 0);
+   transform: translate(0px, -10px);
+   transition: 2s ease;
+}

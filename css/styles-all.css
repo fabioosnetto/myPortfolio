@@ -95,10 +95,6 @@ bbb8b2
    z-index: -1000;
 }
 
-.mobile_block{
-   display: none;
-}
-
 .emphasis{
    font-variant: small-caps;
    font-weight: bold;
@@ -292,6 +288,8 @@ section#improvement{
    max-width: 850px;
    margin: auto;
    box-sizing: border-box;
+
+   flex-direction: column;
 }
 
 p#presentment_intro{
@@ -307,6 +305,8 @@ div#cold_emote{
    align-content: space-between;
    flex-wrap: nowrap;
 
+   width: 100vw;
+   max-width: 850px;
    padding-bottom: 4em;
 }
 
@@ -372,7 +372,6 @@ div#optimism{
    align-items: center;
    justify-items: center;
    align-self: center;
-   box-shadow: 2vw 0vw 5vw 5vw #f344132f;
 }
 
 div#optimism > p{
@@ -442,7 +441,7 @@ div#seriousness > p{
    margin-bottom: 2em;
    width: 95vw;
 
-   box-shadow: 1vw 2vw 3vw 1vw rgba(255, 255, 255, 0.171);
+   box-shadow: 0vw 2vw 9vw 1vw rgba(255, 255, 255, 0.144);
    text-shadow: .1vw .1vw .2vw rgba(255, 94, 0, 0.712);
 }
 
@@ -516,11 +515,15 @@ div#mk_1{
    background-color: rgba(128, 128, 128, 1.0);
 }
 
+div#char_id_container{
+   max-width: 850px;
+   padding: 4em;
+}
+
 p#char_intro{
    font-family: 'mySansSerif_1';
-   font-size: 3.5vw;
+   font-size: 3.2vw;
    text-align: justify;
-   padding: 3em;
 }
 
 section#individualism{

@@ -7,18 +7,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       
       <!--<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">-->
-      <link rel="preconnect" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
-      <style>
-         .material-symbols-outlined {
-            font-display: fallback;
-            font-variation-settings:
-            'FILL' 0,
-            'wght' 800,
-            'GRAD' 0,
-            'opsz' 48
-         }
-      </style>
 
       <link rel="stylesheet" href="../css/styles-all.css"     media="screen">
       <link rel="stylesheet" href="../css/styles-768max.css"  media="screen and (max-width: 768px)">
@@ -28,6 +17,17 @@
 
       <title>Fabio O.S. Netto</title>
    </head>
+
+   <style>
+      .material-symbols-outlined {
+         font-display: fallback;
+         font-variation-settings:
+         'FILL' 0,
+         'wght' 800,
+         'GRAD' 0,
+         'opsz' 48
+      }
+   </style>
 
    <body onload="adjustments()" onresize="adjustments()">
       <div id="header">
@@ -62,102 +62,105 @@
             </section>
 
          <div id="presentment">
-            <section id="improvement">
-               <p id="presentment_intro">Keeping the robustess of its coldness, now with compatibility for emotional understanding</p>
-               <p class="mobile_none">A big challenge, a big result: your brain piece has been equipped with cutting-edge upgrades, bringing your rationality and emotional intelligence to work together!</p>
+            <section id="improvement" class="display_flex">
+               <div class="display_flex column">
+                  <p id="presentment_intro">Keeping the robustess of its coldness, now with compatibility for emotional understanding</p>
+               </div>
 
-               <div id="cold_emote" class="display_flex">
-                  <div id="cold"></div>
-                  <div id="big_big">
-                     <p class="mobile_block">A big<br><strong>challenge</strong>,<br>A big<br><strong>result</strong></p>
+               <div class="display_flex column">
+                  <p id="cutting_edge" class="mobile_none">Your brain piece has been equipped with <strong>cutting-edge</strong> upgrades, bringing your <strong>rationality</strong> and <strong>emotional</strong> intelligence to work together!</p>
+                  <div id="cold_emote" class="display_flex">
+                     <div id="cold"></div>
+                     <div id="big_big">
+                        <p>A big<br><strong>challenge</strong><br>A big<br><strong>result</strong></p>
+                     </div>
+                     <div id="emote"></div>
                   </div>
-                  <div id="emote"></div>
                </div>
             </section>
 
             <div id="parallax_line"></div>
 
-            <section>
-               <div id="optimism" class="display_flex">
-                  <p id="bef_joker" class="ltb">
-                     The jokes<br>are awful,<br>the sense of<br><span class="emphasis">humor</span><br>is<br><span class="emphasis">incredible</span>
-                  </p>
-                  <div id="joker"></div>
-                  <p id="aft_joker" class="trb">The <span class="emphasis">fun</span><br>never stops,<br><span class="emphasis">optimism</span><br>is<br>constant,<br>but...</p>
-               </div>
+            <div style="background-color: black;">
+               <section>
+                  <div id="optimism" class="display_flex">
+                     <p id="bef_joker" class="ltb">
+                        The jokes<br>are awful,<br>the sense of<br><span class="emphasis">humor</span><br>is<br><span class="emphasis">incredible</span>
+                     </p>
+                     <div id="joker"></div>
+                     <p id="aft_joker" class="trb">The <span class="emphasis">fun</span><br>never stops,<br><span class="emphasis">optimism</span><br>is<br>constant,<br>but...</p>
+                  </div>
                
-               <div id="seriousness" class="display_flex">
-                  <p>
-                     Seriousness, visible in his face and expressions, <span class="emphasis">great commitment</span> to his interests,<br>slight pessimism observed when comes to self-demand.
-                  </p>
-               </div>
-            </section>
+                  <div id="seriousness" class="display_flex">
+                     <p>
+                        Seriousness, visible in his face and expressions, <span class="emphasis">great commitment</span> to his interests,<br>slight pessimism observed when comes to self-demand.
+                     </p>
+                  </div>
+               </section>
+            </div>
          </div>
 
-         <article id="characteristics">
-            <p id="char_intro">
-               After incessant frustration with bugs and errors, we have noticed that this was poviding competitive advantages. Therefore, they were reinforced and controlled, in order to make bugs, deliberate errors for the consolidation of fundamental advantages.
-            </p>
-            <div id="char_slides">
-               <section id="individualism" class="display_flex">
-                  <div id="idv_txt_container">
-                     <p><strong>Individualism</strong>: possibily viewed as self-centeredness, brings determination and ambition to do one's best to solve problems in the most adverse situations. It is difficult to ask for help, however, nothing that prevents good teamwork, once everything is well organized.</p>
-                  </div>
-               </section>
-               <section id="diversion_attention" class="display_flex">
-                  <div id="datt_txt_container">
-                     <p><strong>Diversion of Attention:</strong> attention is despersed, often requiring specific environments for productivity (music, comfort, energy drinks, chocolate...). It may take a while to get a goo focus, since this goes hand in hand with pleasure, but whenever present, it is a hyperfocus, to the point of forgeting everything around.</p>
-                  </div>
-               </section>
-               <section id="perfectionism" class="display_flex">
-                  <div id="pfct_txt_container">
-                     <p><strong>Perfectionism</strong>: in previous versions, given only by  self-demand. However, in its most recent version, we have controlled the impulses of his mind so that he can calmly use it as advantage for refined work, without falling into paranoia.</p>
-                  </div>
-               </section>
-
-               <button id="char_back" class="char_button" type="button" onclick="charButtonClick('back')"><span class="material-symbols-outlined">arrow_back_ios</span></button>
-               
-               <button id="char_forward" class="char_button" type="button" onclick="charButtonClick('forward')"><span class="material-symbols-outlined">arrow_forward_ios</span></button>
-
-               <div id="slideMK_container" class="display_flex">
-                  <div id="mk_1" class="slide_marker"></div>
-                  <div id="mk_2" class="slide_marker"></div>
-                  <div id="mk_3" class="slide_marker"></div>
+         <div style="background-color: black;">
+            <article id="characteristics">
+               <div id="char_id_container">
+                  <p id="char_intro">
+                     After incessant frustration with bugs and errors, we have noticed that this was poviding competitive advantages. Therefore, they were reinforced and controlled, in order to make bugs, deliberate errors for the consolidation of fundamental advantages.
+                  </p>
                </div>
-            </div>
-         </article>
-
-
-         <section id="history">
-            <h2>Story</h2>
-            <p>
-               His story begins in a small town in the south of Brazil, however, he grew from one side to the other, making hundreds of a new friends, adapting to new realities.
-               From an early age, detail-oriented, always wanting to gain prominence, which justified the nerd influence he came to have. After a while, the financial infuence gigantically changed his reality, when he began his studies on the stock exchange and general economy. Likewise, later on, thinking about automating financial operations, he began his studies in programming, wich had already been a present desire for some time. 
-               His focus was increasingly on simplicity and sophistication, intelligence and wisdom rather than the superficiality of a nerdy schoolboy. A sudden and difficult change, but also not finalized, in order to always be in touch with evolution, without being too attached to current thoughts and customs.
-               In no way is justified his way of thinking as correct, but as the chosen one, according to his preferences. Today, focused on what he considers worthwhile, he he studies and learns for the simple pleasure of the process. He revels in his work and hobbies, takings advantage of his skills and creating new ones.
-            </p>
-         </section>
-
-
-         <section id="skills">
-            <h2>Skills</h2>
-            <ul>
-               <li>Programming</li>
-               <li>(Courses and sites, one by one); (Sites: slides = GTA screen loading; text describing + background of website with paralax effect). HTML, CSS, Algorithm, JS, SQL</li>
-               <li>MQL5, C++, OOP, notions of C#</li>
-               <li>Pratical knowledge, self learning first. Reading the language documentation, mostly, in english. (websites test/learning).</li>
-               <li>Intermediary English.</li>
-               <li>Economy (financial education, notions of economy, technical chart  analyst, process automation).</li>
-               <li>Mathmatics (Gold medalist of "Prêmio ACIC de Matemática", 2 honrable mentions on OBMEP)</li>
-               <li>Drawing (hundreds of pratical hours, aiming for hyperrealism).</li>
-               <li>Skating (hobby of great affection, to wich it has been envolved with great commitment);</li>
-            </ul>
-         </section>
-
-         <section id="disadvantages">
-            <h2>But... and disadvantages?</h2>
-            <p>He hates attendant role and his attention is selective, works difficultly at morning period, wich can lead to many other problems.</p>
-         </section>
+               <div id="char_slides">
+                  <section id="individualism" class="display_flex">
+                     <div id="idv_txt_container">
+                        <p><strong>Individualism</strong>: possibily viewed as self-centeredness, brings determination and ambition to do one's best to solve problems in the most adverse situations. It is difficult to ask for help, however, nothing that prevents good teamwork, once everything is well organized.</p>
+                     </div>
+                  </section>
+                  <section id="diversion_attention" class="display_flex">
+                     <div id="datt_txt_container">
+                        <p><strong>Diversion of Attention:</strong> attention is despersed, often requiring specific environments for productivity (music, comfort, energy drinks, chocolate...). It may take a while to get a goo focus, since this goes hand in hand with pleasure, but whenever present, it is a hyperfocus, to the point of forgeting everything around.</p>
+                     </div>
+                  </section>
+                  <section id="perfectionism" class="display_flex">
+                     <div id="pfct_txt_container">
+                        <p><strong>Perfectionism</strong>: in previous versions, given only by  self-demand. However, in its most recent version, we have controlled the impulses of his mind so that he can calmly use it as advantage for refined work, without falling into paranoia.</p>
+                     </div>
+                  </section>
+                  <button id="char_back" class="char_button" type="button" onclick="charButtonClick('back')"><span class="material-symbols-outlined">arrow_back_ios</span></button>
+            
+                  <button id="char_forward" class="char_button" type="button" onclick="charButtonClick('forward')"><span class="material-symbols-outlined">arrow_forward_ios</span></button>
+                  <div id="slideMK_container" class="display_flex">
+                     <div id="mk_1" class="slide_marker"></div>
+                     <div id="mk_2" class="slide_marker"></div>
+                     <div id="mk_3" class="slide_marker"></div>
+                  </div>
+               </div>
+            </article>
+            <section id="history">
+               <h2>Story</h2>
+               <p>
+                  His story begins in a small town in the south of Brazil, however, he grew from one side to the other, making hundreds of a new friends, adapting to new realities.
+                  From an early age, detail-oriented, always wanting to gain prominence, which justified the nerd influence he came to have. After a while, the financial infuence gigantically changed his reality, when he began his studies on the stock exchange and general economy. Likewise, later on, thinking about automating financial operations, he began his studies in programming, wich had already been a present desire for some time.
+                  His focus was increasingly on simplicity and sophistication, intelligence and wisdom rather than the superficiality of a nerdy schoolboy. A sudden and difficult change, but also not finalized, in order to always be in touch with evolution, without being too attached to current thoughts and customs.
+                  In no way is justified his way of thinking as correct, but as the chosen one, according to his preferences. Today, focused on what he considers worthwhile, he he studies and learns for the simple pleasure of the process. He revels in his work and hobbies, takings advantage of his skills and creating new ones.
+               </p>
+            </section>
+            <section id="skills">
+               <h2>Skills</h2>
+               <ul>
+                  <li>Programming</li>
+                  <li>(Courses and sites, one by one); (Sites: slides = GTA screen loading; text describing + background of website with paralax effect). HTML, CSS, Algorithm, JS, SQL</li>
+                  <li>MQL5, C++, OOP, notions of C#</li>
+                  <li>Pratical knowledge, self learning first. Reading the language documentation, mostly, in english. (websites test/learning).</li>
+                  <li>Intermediary English.</li>
+                  <li>Economy (financial education, notions of economy, technical chart  analyst, process automation).</li>
+                  <li>Mathmatics (Gold medalist of "Prêmio ACIC de Matemática", 2 honrable mentions on OBMEP)</li>
+                  <li>Drawing (hundreds of pratical hours, aiming for hyperrealism).</li>
+                  <li>Skating (hobby of great affection, to wich it has been envolved with great commitment);</li>
+               </ul>
+            </section>
+            <section id="disadvantages">
+               <h2>But... and disadvantages?</h2>
+               <p>He hates attendant role and his attention is selective, works difficultly at morning period, wich can lead to many other problems.</p>
+            </section>
+         </div>
       </main>
 
       <footer>
