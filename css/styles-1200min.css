@@ -39,3 +39,7 @@ p#cutting_edge{
 div#big_big > p{
    font-size: 2.2em;
 }
+
+div#seriousness > p{
+   font-size: 2.5em;
+}

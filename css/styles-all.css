@@ -140,12 +140,13 @@ header > h1{
    font-family: 'myCursive_3';
    font-size: 3.5em;
    text-shadow: .2vw .2vw 3vw var(--myorange);
+   text-shadow: 1.5vw 1.5vw 10vw var(--myorange);
    transition: text-shadow .5s ease .3s;
 }
 
 header > h1:hover{
-   text-shadow: 1.5vw 1.5vw 10vw var(--myorange);
-   transition: text-shadow .5 ease .3s;
+   text-shadow: .2vw .2vw 3vw var(--myorange);
+   cursor: context-menu;
 }
 
 div#header_order_now{
@@ -414,6 +415,7 @@ div#seriousness{
    background-size: cover;
    background-position: center center;
    height: 66vw;
+   max-height: 666px;
    width: 96.5vw;
    max-width: 850px;
 
