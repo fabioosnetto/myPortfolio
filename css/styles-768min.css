@@ -1,6 +1,79 @@
 @charset "UTF-8";
 @import url(styles-all.css);
 
+header{
+   max-height: 130px;
+}
+
+header > h1{
+   font-size: 6.5vw;
+}
+
+nav > ul{
+   display: flex;
+   list-style: none;
+}
+
+nav > ul > li{
+   font-family: 'mySansSerif_3';
+   font-size: 1.1em;
+   color: var(--mygrey);
+   padding: 0.6em 0.75em;
+   
+   border-left: 2px solid var(--myblack);
+   transition: .7s ease-out;
+}
+
+#nav_li_1{
+   margin-left: 10px;
+}
+
+#nav_li_4{
+   height: 1.5em;
+   font-size: 0.95em;
+   margin-right: 10px;
+   padding: 0.4em 0.3em;
+
+   position: absolute;
+   right: 0px;
+   
+   border-left: 2px solid var(--myblack);
+   align-self: center;
+
+   transition: .7s ease 0.2s;
+}
+
+#nav_li_4:hover{
+   background-color: var(--myred);
+   border-left: 2px solid white;
+   color: white;
+
+   transform: translate(5px, 5px);
+}
+
+nav > ul > li:hover{
+   background-color: var(--myblack);
+   text-shadow: 3px 3px 4vw white;
+   cursor: pointer;
+}
+
+div#intro_banner_bg{
+   bottom: -13em;
+}
+
+div#intro_banner_txt > h2{
+   font-size: 5.3vw;
+
+   text-indent: 1em;
+   text-shadow: .6vw .6vw 5.5vw white;
+}
+div#intro_banner_txt > p{
+   font-size: 4.5vw;
+}
+div#intro_banner_href > p > a{
+   font-size: 1.5vw;
+}
+
 p#cutting_edge{
    display: none;
 }

@@ -2,6 +2,32 @@
 @import url(styles-all.css);
 @import url(styles-992min.css);
 
+header > h1{
+   font-size: 5.0vw;
+}
+
+nav > ul{
+   justify-content: center;
+}
+
+div#intro_banner_bg{
+   bottom: -37em;
+   max-height: 1500px;
+}
+
+div#intro_banner_txt > h2{
+   font-size: 4.2vw;
+
+   text-indent: 1em;
+   text-shadow: .6vw .6vw 5.5vw white;
+}
+div#intro_banner_txt > p{
+   font-size: 3.7vw;
+}
+div#intro_banner_href > p > a{
+   font-size: 1.5vw;
+}
+
 p#presentment_intro{
    font-size: 3.24em;
 }

@@ -188,10 +188,6 @@ div#header_order_now > p > a{
    text-decoration: none;
 }
 
-nav > ul > li{
-   display: inline-block;
-}
-
 main{
    flex-direction: column;
 }
@@ -203,10 +199,11 @@ div#intro_banner_bg{
    background-repeat: no-repeat;
    background-position: bottom left;
 
-   top: -5vh;
+   bottom: -10vw;
    
    min-height: 200px;
-   height: 130vh;
+   height: 140vw;
+   max-height: 1000px;
    
    width: 100vw;
 }
@@ -234,6 +231,7 @@ div#intro_banner_txt > h2{
 
    padding: 1em 0em 1em 0em;
    text-align: left;
+   text-indent: .7em;
    text-shadow: .5vw .5vw 5vw white;
 }
 
