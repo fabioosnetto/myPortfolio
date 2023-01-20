@@ -104,5 +104,21 @@ div#emote:hover{
 }
 
 div#seriousness > p{
+   font-size: 2.3em;
+}
+
+p#story_1_txt_1{
    font-size: 2.5em;
+   margin: 3em 0em 0em 2em;
+}
+
+p#story_1_txt_2{
+   font-size: 2.3em;
+   margin: 0em 2em 2em 0em;
+}
+
+p#story_2_txt_1{
+   font-size: 1.9em;
+   right: 1em;
+   bottom: 12em;
 }

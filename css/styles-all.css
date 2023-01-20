@@ -98,12 +98,15 @@ bbb8b2
 .emphasis{
    font-variant: small-caps;
    font-weight: bold;
+   color: white;
 }
 
 .ltb{
    border-style: solid;
    border-width: .5vw;
    border-color: var(--myred);
+   border-image: linear-gradient(to right bottom, var(--mygrey), var(--myorange), var(--myred));
+   border-image-slice: 44;
 
    border-right-style: unset;
    border-right-width: 0px;
@@ -114,6 +117,8 @@ bbb8b2
    border-style: solid;
    border-width: .5vw;
    border-color: var(--myred);
+   border-image: linear-gradient(to right bottom, var(--mygrey), var(--myorange), var(--myred));
+   border-image-slice: 44;
 
    border-left-style: unset;
    border-left-width: 0px;
@@ -273,7 +278,7 @@ div#intro_banner_href > p{
    padding: 1em;
 }
 
-div#parallax_line{
+.parallax_line{
    background-color: transparent;
    height: 7px;
 }
@@ -325,7 +330,7 @@ div#cold{
 }
 
 div#big_big{
-   background-color: var(--myblack);
+   background-color: black;
    height: 40vw;
    max-height: 333.594px;
    width: 30vw;
@@ -337,10 +342,14 @@ div#big_big{
 
 div#big_big > p{
    font-family: 'mySansSerif_1';
-   color: white;
+   color: var(--mygrey);
    font-size: 6vw;
    text-align: center;
    margin-top: 5.5vw;
+}
+
+div#big_big > p > strong{
+   color: white;
 }
 
 div#emote{
@@ -360,9 +369,9 @@ div#emote{
 
 div#optimism{
    background-color: black;
-   color: white;
+   color: var(--mygrey);
 
-   max-height: 480px;
+   max-height: 430px;
    height: 60vw;
    width: 96.5vw;
    max-width: 850px;
@@ -397,12 +406,11 @@ div#joker{
    height: 50vw;
    width: 33vw;
 
-   border-top-style: solid;
-   border-top-width: .5vw;
-   border-top-color: var(--myred);
-   border-bottom-style: solid;
-   border-bottom-width: .5vw;
-   border-bottom-color: var(--myred);
+   border-style: solid none;
+   border-width: .5vw 0vw;
+   border-color: var(--myred) transparent;
+   border-image: linear-gradient(to right, var(--mygrey), var(--myorange), var(--myred));
+   border-image-slice: 44;
    border-radius: 10px;
 
    box-shadow: inset 1vw 1vw 4vw 3vw rgba(0, 0, 0, 0.637);
@@ -427,6 +435,7 @@ div#seriousness{
    border-style: solid;
    border-width: .3vw;
    border-color: var(--myred);
+   border-image: linear-gradient(to right bottom, var(--myblack), var(--mygrey), var(--myorange)) 1;
    border-radius: 5px;
    box-sizing: border-box;
 }
@@ -456,6 +465,7 @@ article#characteristics{
 
 div#char_slides{
    position: relative;
+   margin-bottom: 5em;
 }
 
 #char_back{
@@ -526,9 +536,14 @@ p#char_intro{
    text-align: justify;
 }
 
+.char_titles{
+   color: white; 
+   font-variant: small-caps;
+}
+
 section#individualism{
    background-color: black;
-   background-image: url(../images/chose/individualism-edited-300.png);
+   background-image: url(../images/chose/individualism-edited-500.jpg);
    background-size: cover;
 
    max-height: 500px;
@@ -542,6 +557,7 @@ section#individualism{
 
 div#idv_txt_container{
    background-color: rgba(0, 0, 0, 0.678);
+   padding-bottom: 2em;
 }
 
 div#idv_txt_container > p{
@@ -552,7 +568,7 @@ div#idv_txt_container > p{
    font-size: 3.5vw;
    padding: 2em;
 
-   text-align: justify;
+   text-align: center;
 }
 
 section#diversion_attention{
@@ -576,6 +592,7 @@ section#diversion_attention{
 
 div#datt_txt_container{
    background-color: rgba(0, 0, 0, 0.678);
+   padding-bottom: 3em;
 }
 
 div#datt_txt_container > p{
@@ -586,7 +603,7 @@ div#datt_txt_container > p{
    font-size: 3.5vw;
    padding: 2em;
 
-   text-align: justify;
+   text-align: center;
 }
 
 section#perfectionism{
@@ -610,6 +627,7 @@ section#perfectionism{
 
 div#pfct_txt_container{
    background-color: rgba(0, 0, 0, 0.678);
+   padding-bottom: 3em;
 }
 
 div#pfct_txt_container > p{
@@ -620,13 +638,101 @@ div#pfct_txt_container > p{
    font-size: 3.5vw;
    padding: 2em;
 
-   text-align: justify;
+   text-align: center;
 }
 
-section#history{
+article#story{
    background-color: var(--myblack);
-   max-width: 850px;
    margin: auto;
+}
+
+article#story > section > div > p{
+   font-family: 'mySansSerif_3';
+}
+
+.story_container{
+   max-height: 700px;
+   height: 75vw;
+   color: white;
+}
+
+section#story_1{
+   background-color: black;
+   background-image: url(../images/story_1-full.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+
+div#story_1_txt{
+   background-color: rgba(0, 0, 0, 0.548);
+}
+
+p#story_1_txt_1{
+   position: relative;
+   font-size: 4vw;
+   flex: 40%;
+   height: fit-content;
+   margin: 10vw 0vw 0vw 6vw;
+
+   transition: .2s;
+}
+
+p#story_1_txt_1::before{
+   content: '__';
+   font-weight: bolder;
+   position: absolute;
+   top: -4.3vw;
+}
+
+p#story_1_txt_2{
+   position: relative;
+   font-size: 4vw;
+   flex: 60%;
+   height: fit-content;
+   align-self: flex-end;
+   margin: 0vw 4vw 8vw 0vw;
+
+   transition: .2s ease;
+}
+
+p#story_1_txt_2::before{
+   content: '__';
+   font-weight: bolder;
+   position: absolute;
+   top: -4.3vw;
+}
+
+section#story_2{
+   background-color: black;
+   background-image: url(../images/story_2-full.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: left center;
+}
+
+div#story_2_txt{
+   background-color: rgba(0, 0, 0, 0.548);
+   width: 100vw;
+   position: relative;
+}
+
+p#story_2_txt_1{
+   width: 40vw;
+   font-size: 3vw;
+
+   position: absolute;
+   right: 2vw;
+   bottom: 38vw;
+   align-self: center;
+   
+   transition: .2s;
+}
+
+p#story_2_txt_1::before{
+   content: '__';
+   font-weight: bolder;
+   position: absolute;
+   top: -3vw;
 }
 
 section#skills{
