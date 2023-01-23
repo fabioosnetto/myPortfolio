@@ -656,6 +656,15 @@ article#story > section > div > p{
    color: white;
 }
 
+.txt_marker::before{
+   content: '_';
+   font-weight: bolder;
+   position: absolute;
+   top: -6vw;
+   font-size: 5vw;
+   text-indent: -.8vw;
+}
+
 section#story_1{
    background-color: black;
    background-image: url(../images/story_1-full.jpg);
@@ -677,13 +686,6 @@ p#story_1_txt_1{
    transition: .2s;
 }
 
-p#story_1_txt_1::before{
-   content: '__';
-   font-weight: bolder;
-   position: absolute;
-   top: -4.3vw;
-}
-
 p#story_1_txt_2{
    position: relative;
    font-size: 4vw;
@@ -693,13 +695,6 @@ p#story_1_txt_2{
    margin: 0vw 4vw 8vw 0vw;
 
    transition: .2s ease;
-}
-
-p#story_1_txt_2::before{
-   content: '__';
-   font-weight: bolder;
-   position: absolute;
-   top: -4.3vw;
 }
 
 section#story_2{
@@ -723,16 +718,124 @@ p#story_2_txt_1{
    position: absolute;
    right: 2vw;
    bottom: 38vw;
-   align-self: center;
    
    transition: .2s;
 }
 
-p#story_2_txt_1::before{
-   content: '__';
-   font-weight: bolder;
+section#story_3{
+   background-color: black;
+   background-image: url(../images/story_3-full.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+
+div#story_3_txt{
+   background-color: rgba(0, 0, 0, 0.548);
+   position: relative;
+   width: 100vw;
+}
+
+p#story_3_txt_1{
+   position: relative;
+   font-size: 3.5vw;
+   height: fit-content;
+   width: 55vw;
+   text-align: justify;
+   margin: 11vw 0vw 0vw 7vw;
+
+   transition: .5s ease;
+}
+
+p#story_3_txt_2{
    position: absolute;
-   top: -3vw;
+   bottom: 10vw;
+   right: 7vw;
+   font-size: 3.2vw;
+   height: fit-content;
+   width: 60vw;
+   text-align: justify;
+
+   transition: .5s ease;
+}
+
+section#story_4{
+   background-color: black;
+   background-image: url(../images/story_4-full.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: left center;
+}
+
+div#story_4_txt{
+   background-color: rgba(0, 0, 0, 0.548);
+   position: relative;
+   width: 100vw;
+}
+
+p#story_4_txt_1{
+   position: relative;
+   font-size: 3.3vw;
+   height: fit-content;
+   width: 61.5vw;
+   text-align: justify;
+   margin: 15vw 0vw 0vw 25vw;
+
+   transition: .5s ease;
+}
+
+p#story_4_txt_2{
+   position: absolute;
+   bottom: 9vw;
+   left: 9vw;
+
+   font-size: 3.3vw;
+   height: fit-content;
+   width: 60vw;
+   text-align: justify;
+
+   transition: .5s ease;
+}
+
+section#story_5{
+   background-color: black;
+   background-image: url(../images/story_5-full.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: left center;
+}
+
+div#story_5_txt{
+   background-color: rgba(0, 0, 0, 0.548);
+   position: relative;
+   width: 100vw;
+}
+
+p#story_5_txt_1{
+   position: relative;
+
+   font-size: 2.875vw;
+   letter-spacing: .3vw;
+   height: fit-content;
+   width: 55vw;
+   text-align: justify;
+   margin: 11vw 0vw 0vw 4vw;
+
+   transition: .5s ease;
+}
+
+p#story_5_txt_2{
+   position: absolute;
+   bottom: 19vw;
+   left: 16vw;
+
+   font-size: 2.9vw;
+   letter-spacing: .2vw;
+   line-height: 1.5em;
+   height: fit-content;
+   width: 75vw;
+   text-align: center;
+
+   transition: .5s ease;
 }
 
 section#skills{
