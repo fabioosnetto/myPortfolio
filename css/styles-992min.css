@@ -1,6 +1,10 @@
 @charset "UTF-8";
 @import url(styles-all.css);
 
+div#intro_banner_bg{
+   bottom: -20em;
+}
+
 .row{
    flex-direction: row;
    flex-wrap: wrap;
@@ -121,4 +125,37 @@ p#story_2_txt_1{
    font-size: 1.9em;
    right: 1em;
    bottom: 12em;
+}
+
+p#story_3_txt_1{
+   font-size: 2.5em;
+   margin: 3em 0em 0em 2em;
+}
+
+p#story_3_txt_2{
+   font-size: 2.3em;
+   bottom: 3em;
+   right: 2em;
+}
+
+p#story_4_txt_1{
+   font-size: 2.3em;
+   margin: 4em 0em 0em 5em;
+}
+
+p#story_4_txt_2{
+   font-size: 2.3em;
+   bottom: 3em;
+   left: 3em;
+}
+
+p#story_5_txt_1{
+   font-size: 1.8em;
+   margin: 3em 0em 0em 1em;
+}
+
+p#story_5_txt_2{
+   font-size: 2em;
+   bottom: 3.8em;
+   left: 3.5em;
 }
