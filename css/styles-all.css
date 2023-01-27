@@ -862,7 +862,7 @@ section#skills{
    width: 65vw;
 
    position: absolute;
-   transform: rotate(-5deg) skew(10deg) translate(-3%, 84%);
+   transform: rotate(-5deg) skew(10deg) translate(-3%, 90%);
    box-shadow: .1vw .1vw 2vw .1vw rgba(255, 255, 255, 0.603);
 
    z-index: 0;
@@ -874,7 +874,7 @@ section#skills{
    width: 30vw;
 
    position: absolute;
-   transform: rotate(-35deg) skew(-35deg) translate(-13%, 42%);
+   transform: rotate(-35deg) skew(-35deg) translate(-13%, 48%);
    box-shadow: .1vw .1vw 2vw .1vw rgba(59, 59, 59, 0.651), inset .5vw .5vw 5vw .5vw rgba(0, 0, 0, 0.493);
    
    z-index: 1;
@@ -886,8 +886,8 @@ section#skills{
    width: 30vw;
 
    position: absolute;
-   transform: rotate(-20deg) skew(38deg) translate(100%, 65%);
-   box-shadow: .1vw .1vw 3vw .1vw rgba(146, 41, 0, 0.548), inset .5vw .5vw 5vw .5vw rgba(0, 0, 0, 0.459);
+   transform: rotate(-20deg) skew(38deg) translate(100%, 71%);
+   box-shadow: .1vw .1vw 3vw .1vw rgba(146, 41, 0, 0.548);
 
    z-index: 2;
 }
@@ -898,8 +898,8 @@ section#skills{
    width: 120vw;
 
    position: absolute;
-   transform: rotate(10deg) skew(35deg) translate(-13%, 58%);
-   box-shadow: .1vw .1vw 2vw .1vw rgba(173, 81, 19, 0.527), inset .5vw .5vw 5vw .5vw rgba(0, 0, 0, 0.459);
+   transform: rotate(10deg) skew(35deg) translate(-13%, 64%);
+   box-shadow: .1vw .1vw 2vw .1vw rgba(173, 81, 19, 0.527);
 
    z-index: 3;
 }
@@ -909,7 +909,7 @@ section#skills{
    width: fit-content;
 
    position: absolute;
-   top: 38%;
+   top: 44%;
    z-index: 4;
 }
 
