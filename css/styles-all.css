@@ -863,6 +863,7 @@ section#skills{
 
    position: absolute;
    transform: rotate(-5deg) skew(10deg) translate(-3%, 84%);
+   box-shadow: .1vw .1vw 2vw .1vw rgba(255, 255, 255, 0.603);
 
    z-index: 0;
 }
@@ -874,7 +875,8 @@ section#skills{
 
    position: absolute;
    transform: rotate(-35deg) skew(-35deg) translate(-13%, 42%);
-
+   box-shadow: .1vw .1vw 2vw .1vw rgba(59, 59, 59, 0.651), inset .5vw .5vw 5vw .5vw rgba(0, 0, 0, 0.493);
+   
    z-index: 1;
 }
 
@@ -885,6 +887,7 @@ section#skills{
 
    position: absolute;
    transform: rotate(-20deg) skew(38deg) translate(100%, 65%);
+   box-shadow: .1vw .1vw 3vw .1vw rgba(146, 41, 0, 0.548), inset .5vw .5vw 5vw .5vw rgba(0, 0, 0, 0.459);
 
    z-index: 2;
 }
@@ -896,6 +899,7 @@ section#skills{
 
    position: absolute;
    transform: rotate(10deg) skew(35deg) translate(-13%, 58%);
+   box-shadow: .1vw .1vw 2vw .1vw rgba(173, 81, 19, 0.527), inset .5vw .5vw 5vw .5vw rgba(0, 0, 0, 0.459);
 
    z-index: 3;
 }
@@ -916,7 +920,7 @@ section#skills{
    text-indent: .5em;
    color: white;
 
-   text-shadow: .1vw .1vw 3vw var(--myred);
+   text-shadow: .1vw .1vw 2vw var(--myred);
 }
 
 #experience_time{
