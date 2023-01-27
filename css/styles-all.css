@@ -642,8 +642,12 @@ div#pfct_txt_container > p{
 }
 
 article#story{
-   background-color: var(--myblack);
+   background-color: black;
    margin: auto;
+   position: relative;
+   max-height: 700px;
+   height: 75vw;
+   overflow-x: hidden;
 }
 
 article#story > section > div > p{
@@ -654,6 +658,15 @@ article#story > section > div > p{
    max-height: 700px;
    height: 75vw;
    color: white;
+
+   position: absolute;
+   opacity: 0;
+
+   transition: opacity 2s ease;
+}
+
+.story_container > div > p{
+   opacity: 0;
 }
 
 .txt_marker::before{
@@ -670,6 +683,13 @@ section#story_1{
    background-image: url(../images/story_1-full.jpg);
    background-size: cover;
    background-repeat: no-repeat;
+
+   opacity: 1;
+}
+
+.story-text-animate{
+   transform: translate(1vw, 3vw);
+   transition: 2s ease;
 }
 
 div#story_1_txt{
@@ -681,9 +701,7 @@ p#story_1_txt_1{
    font-size: 4vw;
    flex: 40%;
    height: fit-content;
-   margin: 10vw 0vw 0vw 6vw;
-
-   transition: .2s;
+   margin: 7vw 0vw 0vw 5vw;
 }
 
 p#story_1_txt_2{
@@ -692,9 +710,7 @@ p#story_1_txt_2{
    flex: 60%;
    height: fit-content;
    align-self: flex-end;
-   margin: 0vw 4vw 8vw 0vw;
-
-   transition: .2s ease;
+   margin: 0vw 5vw 11vw 0vw;
 }
 
 section#story_2{
@@ -716,10 +732,8 @@ p#story_2_txt_1{
    font-size: 3vw;
 
    position: absolute;
-   right: 2vw;
-   bottom: 38vw;
-   
-   transition: .2s;
+   right: 3vw;
+   bottom: 41vw;
 }
 
 section#story_3{
@@ -741,21 +755,17 @@ p#story_3_txt_1{
    height: fit-content;
    width: 55vw;
    text-align: justify;
-   margin: 11vw 0vw 0vw 7vw;
-
-   transition: .5s ease;
+   margin: 10vw 0vw 0vw 4vw;
 }
 
 p#story_3_txt_2{
    position: absolute;
-   bottom: 10vw;
-   right: 7vw;
+   bottom: 13vw;
+   right: 8vw;
    font-size: 3.2vw;
    height: fit-content;
    width: 60vw;
    text-align: justify;
-
-   transition: .5s ease;
 }
 
 section#story_4{
@@ -778,22 +788,18 @@ p#story_4_txt_1{
    height: fit-content;
    width: 61.5vw;
    text-align: justify;
-   margin: 15vw 0vw 0vw 25vw;
-
-   transition: .5s ease;
+   margin: 14vw 0vw 0vw 22vw;
 }
 
 p#story_4_txt_2{
    position: absolute;
-   bottom: 9vw;
-   left: 9vw;
+   bottom: 12vw;
+   left: 10vw;
 
    font-size: 3.3vw;
    height: fit-content;
    width: 60vw;
    text-align: justify;
-
-   transition: .5s ease;
 }
 
 section#story_5{
@@ -818,15 +824,13 @@ p#story_5_txt_1{
    height: fit-content;
    width: 55vw;
    text-align: justify;
-   margin: 11vw 0vw 0vw 4vw;
-
-   transition: .5s ease;
+   margin: 10vw 0vw 0vw 1vw;
 }
 
 p#story_5_txt_2{
    position: absolute;
-   bottom: 19vw;
-   left: 16vw;
+   bottom: 22vw;
+   left: 15vw;
 
    font-size: 2.9vw;
    letter-spacing: .2vw;
@@ -834,14 +838,118 @@ p#story_5_txt_2{
    height: fit-content;
    width: 75vw;
    text-align: center;
-
-   transition: .5s ease;
 }
 
 section#skills{
-   background-color: var(--myred);
-   max-width: 850px;
+   background-color: black;
+   color: var(--mygrey);
+   /*max-width: 850px;*/
    margin: auto;
+   margin-top: 20vw;
+
+   overflow-x: hidden;
+}
+
+#skills_header_container{
+   height: 50vw;
+   width: 100vw;
+   position: relative;
+}
+
+#skills_shape_1{
+   background-color: var(--mygrey);
+   height: 20vw;
+   width: 65vw;
+
+   position: absolute;
+   transform: rotate(-5deg) skew(10deg) translate(-3%, 84%);
+
+   z-index: 0;
+}
+
+#skills_shape_2{
+   background-color: var(--myblack);
+   height: 20vw;
+   width: 30vw;
+
+   position: absolute;
+   transform: rotate(-35deg) skew(-35deg) translate(-13%, 42%);
+
+   z-index: 1;
+}
+
+#skills_shape_3{
+   background-color: var(--myred);
+   height: 27vw;
+   width: 30vw;
+
+   position: absolute;
+   transform: rotate(-20deg) skew(38deg) translate(100%, 65%);
+
+   z-index: 2;
+}
+
+#skills_shape_4{
+   background-color: var(--myorange);
+   height: 20vw;
+   width: 120vw;
+
+   position: absolute;
+   transform: rotate(10deg) skew(35deg) translate(-13%, 58%);
+
+   z-index: 3;
+}
+
+#skills_header{
+   background-color: transparent;
+   width: fit-content;
+
+   position: absolute;
+   top: 38%;
+   z-index: 4;
+}
+
+#skills_header > h2{
+   font-family: 'mySansSerif_2';
+   font-size: 5vw;
+   letter-spacing: .1em;
+   text-indent: .5em;
+   color: white;
+
+   text-shadow: .1vw .1vw 3vw var(--myred);
+}
+
+#experience_time{
+   height: 25vw;
+   width: 100vw;
+   align-items: center;
+   justify-content: space-evenly;
+}
+
+#experience_time > div{
+   height: 20vw;
+   flex: 25%;
+   align-items: center;
+   justify-content: center;
+}
+
+.number{
+   font-family: 'mySansSerif_2';
+   font-size: 4vw;
+}
+
+#exp_time_middle{
+   border-left: 2px solid var(--mygrey);
+   border-right: 2px solid var(--mygrey);
+}
+
+#experience_time > div > p{
+   font-family: 'mySansSerif_3';
+   font-size: 2.5vw;
+   color: white;
+   text-align: center;
+
+   text-shadow: .5vw .5vw 5vw rgba(255, 255, 255, 0.452);
 }
 
 section#skills > ul{

@@ -1,9 +1,18 @@
+/*+--------------------------+*/
+/*|------- Script for -------|*/
+/*|------ SLIDES eleme ------|*/
+/*+--------------------------+*/
+
+
+
+//+---------------------------------
+//|--- Characteristics
 
 
 //--- Calls 'charSlidesChange()'
 let charSlidesInterval = setInterval(function(){charSlidesChange();}, 10000);
 
-//--- Changes the Slides of 'Characteristics Article'
+//--- Changes the Slides
 function charSlidesChange(){
    let idv = document.querySelector('section#individualism');
    let dat = document.querySelector('section#diversion_attention');
@@ -21,7 +30,7 @@ function charSlidesChange(){
    charSlideMarker(mk_id);
 }
 
-//--- Characteristics Button Click
+//--- Button Click
 function charButtonClick(direction){
    clearInterval(charSlidesInterval);
    let idv = document.querySelector('section#individualism');
@@ -57,20 +66,44 @@ function charSlideMarker(_mk_id){
 
 
 
-//--- Changes the Slides of 'Characteristics Article'
-function charSlidesChange(){
-   let idv = document.querySelector('section#individualism');
-   let dat = document.querySelector('section#diversion_attention');
-   let pft = document.querySelector('section#perfectionism');
-   let mk_id;
+//+---------------------------------
+//|--- Characteristics
 
-   idv.style.opacity == '0'? (dat.style.opacity == '0'? mk_id='mk_1' : mk_id='mk_3') : mk_id='mk_2';
-   dis = idv.style.opacity == '0'? (dat.style.opacity == '0'? idv : pft) : dat;
-   
-   idv.style.opacity    = '0';
-   dat.style.opacity    = '0';
-   pft.style.opacity    = '0';
 
-   dis.style.opacity    = '1';
-   charSlideMarker(mk_id);
+//--- Changes the Slides
+let story_index  = 0;
+let story_slides = document.querySelectorAll('.story_container');
+
+function storySlidesChange(){
+   for (let i = 0; i < story_slides.length; i++) {
+      story_slides[i].style.opacity = 0; 
+
+      let story_slide_child = story_slides[i].children[0];
+      let story_text        = story_slide_child.children;
+      for (let i = 0; i < story_text.length; i++) {
+         story_text[i].style.opacity = 0;
+
+         if (story_text[i].classList.contains('story-text-animate')) {
+            story_text[i].classList.remove('story-text-animate');
+         }
+      }
+   }    
+
+   story_index++;
+   if (story_index > story_slides.length) {story_index = 1;}
+
+   story_slides[story_index-1].style.opacity = 1;
+
+   let story_slide_child = story_slides[story_index-1].children[0];
+   let story_text        = story_slide_child.children;
+
+   for (let i = 0; i < story_text.length; i++) {
+      story_text[i].style.opacity = 1;
+      story_text[i].classList.add('story-text-animate');
+   }
+
+   setTimeout(storySlidesChange, 15000); 
 }
+
+//--- Recursively Calls 'storySlidesChange()'
+storySlidesChange();
