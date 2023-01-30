@@ -956,6 +956,26 @@ section#skills{
    text-shadow: .5vw .5vw 5vw rgba(255, 255, 255, 0.452);
 }
 
+#courses_intro{
+   font-family: 'mySansSerif_1';
+   font-variant: small-caps;
+   color: var(--mygrey);
+   text-align: center;
+}
+
+#courses_list{
+   width: 100vw;
+   list-style: none;
+   flex-wrap: wrap;
+}
+
+#courses_list > li{
+   flex: 33%;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+}
+
 section#skills > ul{
    list-style: none;
 }
