@@ -13,3 +13,38 @@ section#intro_banner{
    max-height: 440px;
    height: 90vw;
 }
+
+#courses_list > li{
+   flex: 45%;
+   height: 45vw;
+}
+
+#courses_list li > div{
+   width: 30vw;
+}
+
+.cursoemvideo::after, .ogroflix::after{
+   font-size: 4.3vw;
+}
+
+.cursoemvideo:hover::after{
+   bottom: -6.6vw;
+   left: 4.8vw;
+}
+.ogroflix:hover::after{
+   bottom: -6.6vw;
+   left: 9vw;
+}
+
+#courses_list li > div > img{
+   height: 12vw;
+}
+
+#courses_list li > div > p{
+   font-size: 2.8vw;
+}
+
+#courses_list li > div > h3{
+   font-size: 3.2vw;
+}
+
