@@ -1005,38 +1005,42 @@ section#skills{
    border-radius: 20px;
 }
 
-.cursoemvideo::after, .ogroflix::after{
+.cursoemvideo > a, .ogroflix > a{
    font-family: 'myCursive_1';
    font-size: 3.3vw;
    color: var(--myred);
+   cursor: pointer;
    position: absolute;
+   
+   transition: .5s ease-out .1s;
+}
+
+.cursoemvideo_showlink{
+   bottom: -4.6vw;
+   left: 4.8vw;
+
+   opacity: 1;
+}
+
+.cursoemvideo_not_showlink{
    bottom: -1vw;
    left: 1.2vw;
 
    opacity: 0;
-   transition: .5s ease-out .1s;
 }
 
-.cursoemvideo::after{
-   content: 'By CursoEmVideo';
-}
-
-.ogroflix::after{
-   content: 'By Ogroflix';
-}
-
-.cursoemvideo:hover::after{
+.ogroflix_showlink{
    bottom: -4.6vw;
    left: 1.3vw;
 
    opacity: 1;
 }
 
-.ogroflix:hover::after{
-   bottom: -4.6vw;
-   left: 4.8vw;
+.ogroflix_not_showlink{
+   bottom: -1vw;
+   left: 0vw;
 
-   opacity: 1;
+   opacity: 0;
 }
 
 #courses_list li > div > img{
@@ -1057,6 +1061,8 @@ section#skills{
    color: white;
    line-height: 2em;
 }
+
+
 
 section#skills > ul{
    list-style: none;
