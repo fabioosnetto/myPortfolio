@@ -159,3 +159,63 @@ p#story_5_txt_2{
    bottom: 4em;
    left: 3.4em;
 }
+
+#extra_knowledge_text > p{
+   font-size: 3vw;
+}
+
+#knowledge_container > p{
+   width: 66vw;
+   font-size: 2.5vw;
+   margin: 5vw 0;
+}
+
+#knowledge{
+   height: 25vw;
+   width: 65vw;
+}
+
+.knowledge_elem{
+   flex: 46%;
+   height: 9vw;
+}
+
+.knowledge_elem > p{
+   width: 28vw;
+   height: 7vw;
+   font-size: 1.5vw;
+   padding: 1em;
+}
+
+.knowledge_elem > p > strong{
+   font-size: 1.8vw;
+}
+
+.knowledge_elem > p::after{
+   top: 0;
+   right: 1.5vw;
+   bottom: unset;
+   left: unset;
+   
+   height: 7vw;
+   width: .3vw;
+   padding: 1em;
+
+   visibility: hidden;
+}
+
+#knowledge_1 > p::after{
+   background-color: transparent;
+}
+
+#knowledge_2 > p::after{
+   background-color: transparent;
+}
+
+#knowledge_3 > p::after{
+   background-color: transparent;
+}
+
+#knowledge_4 > p::after{
+   background-color: transparent;
+}

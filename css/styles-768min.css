@@ -81,3 +81,74 @@ p#cutting_edge{
 div#seriousness > p{
    font-size: 2.5em;
 }
+
+#extra_knowledge_text{
+   flex: 45%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+#extra_knowledge_text > p{
+   font-size: 4vw;
+}
+
+#knowledge_container{
+   flex: 55%;
+}
+
+#knowledge_container > p{
+   width: 55vw;
+   font-size: 3.8vw;
+   margin: 2vw 0;
+}
+
+#knowledge{
+   height: 33vw;
+   width: 55vw;
+}
+
+.knowledge_elem{
+   flex: 25%;
+   height: 15vw;
+}
+
+.knowledge_elem > p{
+   width: 21vw;
+   height: 12vw;
+   font-size: 2vw;
+   padding: 1em;
+}
+
+.knowledge_elem > p > strong{
+   font-size: 2.5vw;
+}
+
+.knowledge_elem > p::after{
+   top: unset;
+   right: unset;
+   bottom: 0;
+   left: 0;
+   
+   height: 3vw;
+   width: calc(21vw + 1em);
+   padding: 0;
+
+   visibility: visible;
+}
+
+#knowledge_1 > p::after{
+   background-color: rgb(0, 36, 0);
+}
+
+#knowledge_2 > p::after{
+   background-color: rgb(62, 77, 0);
+}
+
+#knowledge_3 > p::after{
+   background-color: rgb(63, 10, 0);
+}
+
+#knowledge_4 > p::after{
+   background-color: rgb(1, 43, 1);
+}

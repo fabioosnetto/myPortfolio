@@ -1000,14 +1000,15 @@ section#skills{
 }
 
 #courses_list li > div:hover{
-   background-color: var(--myblack);
+   background-color: var(--myorange);
    transform: translateY(-1.9em);
+   border-color: var(--myred);
    border-radius: 20px;
 }
 
 .cursoemvideo > a, .ogroflix > a{
    font-family: 'myCursive_1';
-   font-size: 3.3vw;
+   font-size: 3vw;
    color: var(--myred);
    cursor: pointer;
    position: absolute;
@@ -1017,21 +1018,21 @@ section#skills{
 
 .cursoemvideo_showlink{
    bottom: -4.6vw;
-   left: 4.8vw;
+   left: 2.7vw;
 
    opacity: 1;
 }
 
 .cursoemvideo_not_showlink{
    bottom: -1vw;
-   left: 1.2vw;
+   left: 1vw;
 
    opacity: 0;
 }
 
 .ogroflix_showlink{
    bottom: -4.6vw;
-   left: 1.3vw;
+   left: 5.5vw;
 
    opacity: 1;
 }
@@ -1062,7 +1063,149 @@ section#skills{
    line-height: 2em;
 }
 
+#extra_knowledge{
+   margin-top: 3em;
+   flex-direction: row;
+   background-color: var(--myblack);
+}
 
+#extra_knowledge_text{
+   flex: 33%;
+   background-color: var(--myred);
+}
+
+#extra_knowledge_text > p{
+   font-family: 'mySansSerif_3';
+   font-size: 3vw;
+   padding: 1em;
+   text-align: center;
+
+   text-shadow: .1vw .1vw 4vw var(--mygrey);
+}
+
+#knowledge_container{
+   flex: 66%;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-evenly;
+}
+
+#knowledge_container > p{
+   width: 66vw;
+   font-family: 'mySansSerif_3';
+   font-size: 2vw;
+   letter-spacing: .2em;
+   text-align: center;
+   padding: .2em;
+   text-shadow: .1vw .1vw 1vw var(--myorange);
+   border: 1px solid var(--myred);
+
+   border-left: none;
+   border-right: none;
+}
+
+#knowledge_level{
+   flex-direction: column;
+   align-items: center;
+}
+
+#knowledge_level_marker{
+   height: 3.3vw;
+   width: 33vw;
+   background-color: purple;
+   background-image: linear-gradient(to right, rgb(0, 36, 0), rgb(62, 77, 0),rgb(63, 10, 0));
+}
+
+#knowledge_level_title{
+   font-family: 'mySansSerif_1';
+   font-size: 2vw;
+   margin-bottom: .5em;
+}
+
+#knowledge_level_reference{
+   flex-direction: row;
+   width: 40vw;
+   justify-content: space-between;
+   margin-bottom: 2em;
+}
+
+#knowledge_level_reference > p{
+   font-family: 'mySansSerif_1';
+   font-size: 1.8vw;
+}
+
+#knowledge{
+   flex-direction: row;
+   flex-wrap: wrap;
+   height: 18vw;
+   width: 65vw;
+   justify-content: space-evenly;
+}
+
+.knowledge_elem{
+   flex: 46%;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   
+   height: 9vw;
+   border-radius: 10px;
+}
+
+.knowledge_elem > p{
+   position: relative;
+   background-color: black;
+   font-family: 'mySansSerif_1';
+   font-size: 1.1vw;
+   height: 5vw;
+   width: 25vw;
+   padding: 1em;
+   letter-spacing: .1em;
+   border-radius: 10px;
+} 
+
+.knowledge_elem > p > strong{
+   font-size: 1.5vw;
+}
+
+.knowledge_elem > p::after{
+   content: "";
+   background-color: transparent;
+   position: absolute;
+   top: 0;
+   right: 1vw;
+   
+   height: 5vw;
+   width: .3vw;
+   padding: 1em;
+   
+   visibility: hidden;
+   transition: 1s ease .1s;
+}
+
+.knowledge_elem > p:hover::after{
+   transform: translateX(2em);
+   border-radius: 0 10px 10px 0;
+
+   visibility: visible;
+}
+
+#knowledge_1 > p:hover::after{
+   background-color: rgb(0, 36, 0);
+}
+
+#knowledge_2 > p:hover::after{
+   background-color: rgb(62, 77, 0);
+}
+
+#knowledge_3 > p:hover::after{
+   background-color: rgb(63, 10, 0);
+}
+
+#knowledge_4 > p:hover::after{
+   background-color: rgb(1, 43, 1);
+}
 
 section#skills > ul{
    list-style: none;

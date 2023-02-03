@@ -23,17 +23,28 @@ section#intro_banner{
    width: 30vw;
 }
 
-.cursoemvideo::after, .ogroflix::after{
-   font-size: 4.3vw;
+.cursoemvideo > a, .ogroflix > a{
+   font-size: 5vw;
 }
 
-.cursoemvideo:hover::after{
-   bottom: -6.6vw;
-   left: 4.8vw;
+.cursoemvideo_showlink{
+   bottom: -7vw;
+   left: 3vw;
 }
-.ogroflix:hover::after{
-   bottom: -6.6vw;
-   left: 9vw;
+
+.cursoemvideo_not_showlink{
+   bottom: -1vw;
+   left: 1vw;
+}
+
+.ogroflix_showlink{
+   bottom: -7vw;
+   left: 7.7vw;
+}
+
+.ogroflix_not_showlink{
+   bottom: -1vw;
+   left: 0vw;
 }
 
 #courses_list li > div > img{
@@ -48,3 +59,86 @@ section#intro_banner{
    font-size: 3.2vw;
 }
 
+#extra_knowledge{
+   flex-direction: column;
+}
+
+#extra_knowledge_text{
+   flex: 33%;
+   display: flex;
+   justify-content: center;
+}
+
+#extra_knowledge_text > p{
+   width: 66vw;
+   font-size: 6vw;
+}
+
+#knowledge_container{
+   flex: 66%;
+}
+
+#knowledge_container > p{
+   width: 95vw;
+   font-size: 4.5vw;
+   margin: 5vw 0;
+}
+
+#knowledge_level_title{
+   font-size: 3.3vw;
+}
+
+#knowledge_level_reference > p{
+   font-size: 3vw;
+}
+
+#knowledge{
+   height: 66vw;
+   width: 100vw;
+}
+
+.knowledge_elem{
+   flex: 50%;
+   height: 25vw;
+}
+
+.knowledge_elem > p{
+   width: 35vw;
+   height: 21vw;
+   font-size: 3vw;
+   padding: 1.5em;
+}
+
+.knowledge_elem > p > strong{
+   font-size: 3.2vw;
+}
+
+.knowledge_elem > p::after{
+   top: unset;
+   right: unset;
+   bottom: 0;
+   left: 0;
+   
+   height: 3.5vw;
+   width: calc(35vw + 1.5em);
+   padding: 0;
+
+   visibility: visible;
+}
+
+
+#knowledge_1 > p::after{
+   background-color: rgb(0, 36, 0);
+}
+
+#knowledge_2 > p::after{
+   background-color: rgb(62, 77, 0);
+}
+
+#knowledge_3 > p::after{
+   background-color: rgb(63, 10, 0);
+}
+
+#knowledge_4 > p::after{
+   background-color: rgb(1, 43, 1);
+}
