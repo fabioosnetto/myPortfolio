@@ -1113,7 +1113,7 @@ section#skills{
    height: 3.3vw;
    width: 33vw;
    background-color: purple;
-   background-image: linear-gradient(to right, rgb(0, 36, 0), rgb(62, 77, 0),rgb(63, 10, 0));
+   background-image: linear-gradient(to right, rgb(0, 17, 0), rgb(62, 77, 0),rgb(34, 6, 0));
 }
 
 #knowledge_level_title{
@@ -1205,6 +1205,114 @@ section#skills{
 
 #knowledge_4 > p:hover::after{
    background-color: rgb(1, 43, 1);
+}
+
+#making_result{
+   max-height: 800px;
+   height: 85vw;
+   position: relative;
+
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+#projects_container_parallax{
+   max-height: 700px;
+   height: 75vw;
+   width: 100vw;
+   position: relative;
+   
+   overflow: hidden;   
+}
+
+.project_container{
+   max-height: 700px;
+   height: 75vw;
+   width: 100vw;
+   position: absolute;
+   top: 0; 
+}
+
+.projects{
+   max-height: 700px;
+   height: 200%;
+   width: 100vw;
+
+   background-color: black;
+   background-size: cover;
+
+   position: absolute;
+   transition: .2s ease-out;
+}
+
+.project_container{
+   display: none;
+}
+
+#project_container_1{
+   display: block;
+}
+
+#project_1{
+   background-image: url(../images/chose/projects/project_1.png);
+}
+
+#project_2{
+   background-image: url(../images/chose/projects/project_2.png);
+}
+
+#project_3{
+   background-image: url(../images/chose/projects/project_3.png);
+}
+
+#project_4{
+   background-image: url(../images/chose/projects/project_4.png);
+}
+
+#project_5{
+   background-image: url(../images/chose/projects/project_5.png);
+}
+
+#project_6{
+   background-image: url(../images/chose/projects/project_6.png);
+}
+
+#project_7{
+   background-image: url(../images/chose/projects/project_7.png);
+}
+
+.project_txt{
+   max-height: 700px;
+   height: 75vw;
+   width: 100vw;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   position: absolute;
+   top: 0;
+
+   background-color: rgba(0, 0, 0, 0.26);
+   box-shadow: inset 1vw 1vw 6vw 4vw rgba(0, 0, 0, 0.253);
+}
+
+.project_txt > p{
+   background-color: rgba(0, 0, 0, 0.85);
+   max-height: 400px;
+   height: 40vw;
+   width: 70vw;
+
+   font-family: 'mySansSerif_1';
+   font-size: 3vw;
+   padding: 1.5em;
+}
+
+#other_achievements{
+   background-color: black;
+   position: relative;
+   
+   z-index: 2;
 }
 
 section#skills > ul{
