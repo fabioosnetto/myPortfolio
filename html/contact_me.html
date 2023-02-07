@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <link rel="shortcut icon" href="../favicon/favicon.ico" type="image/x-icon">
+
+      <title>FOSN23 - Contact Me</title>
+   </head>
+
+   <style>
+      *{
+         padding: 0;
+         margin: 0;
+      }
+      
+      main{
+         height: 100vh;
+         width: 100vw;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+
+         background-color: black;
+      }
+
+      #social_container{
+         max-height: 500px;
+         height: 80vw;
+         
+         max-width: 500px;
+         width: 80vw;
+         
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+
+         background-color: black;
+         border: 1px solid rgb(255, 72, 0);
+         border-radius: 10px;
+      }
+
+      #social_txt_container{
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: space-evenly;
+
+         max-height: 500px;
+         height: 80vw;
+         max-width: 500px;
+         width: 80vw;
+      }
+
+      #social_txt_container div{
+         max-height: 33px;
+         height: 7vw;
+         max-width: 300px;
+         width: 50vw;
+
+         display: flex;
+         align-items: center;
+
+         color: white;
+
+         font-family: Arial, Helvetica, sans-serif;
+         font-size: 1em;
+
+         text-align: left;
+         padding: 1em;
+
+         border: 1px solid rgb(255, 72, 0);
+         border-radius: 5px;
+
+         cursor: pointer;
+         transition: 1s ease-in-out;
+      }
+
+      #social_txt_container div:hover{
+         background-color: rgb(105, 31, 4);
+      }
+
+      a{
+         text-decoration: none;
+         color: white;
+         letter-spacing: .1em;
+      }
+   </style>
+
+   <body>
+      <main>
+        <div id="social_container">
+            <div id="social_txt_container">
+               <a href="https://www.github.com/fabioosnetto" rel="nofollow" target="_blank"><div id="github" class="social">
+                  <p>See me on Github</p>
+               </div></a>
+
+               <a href="https://api.whatsapp.com/send/?phone=5548998416704&text=Hello!" rel="nofollow" target="_blank"><div id="whatsapp" class="social">
+                  <p>Contact me on WhatsApp</p>
+               </div></a>
+               
+               <a href="https://www.instagram.com/fabio.orione" rel="nofollow" target="_blank"><div id="instagram" class="social">
+                  <p>Know me on Instagram</p>
+               </div></a>
+            </div>
+        </div> 
+      </main>
+   </body>
+</html>

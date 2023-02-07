@@ -72,11 +72,17 @@ function charSlideMarker(_mk_id){
 
 //--- Changes the Slides
 let story_index  = 0;
+let story_time   = undefined;
 let story_slides = document.querySelectorAll('.story_container');
+let story_slide_marker = document.querySelectorAll('.story_slide_marker');
 
 function storySlidesChange(){
    for (let i = 0; i < story_slides.length; i++) {
       story_slides[i].style.opacity = 0; 
+      
+      if (story_slide_marker[i].classList.contains('story_slide_marked')) {
+         story_slide_marker[i].classList.remove('story_slide_marked')
+      }
 
       let story_slide_child = story_slides[i].children[0];
       let story_text        = story_slide_child.children;
@@ -93,6 +99,7 @@ function storySlidesChange(){
    if (story_index > story_slides.length) {story_index = 1;}
 
    story_slides[story_index-1].style.opacity = 1;
+   story_slide_marker[story_index-1].classList.add('story_slide_marked');
 
    let story_slide_child = story_slides[story_index-1].children[0];
    let story_text        = story_slide_child.children;
@@ -102,8 +109,20 @@ function storySlidesChange(){
       story_text[i].classList.add('story-text-animate');
    }
 
-   setTimeout(storySlidesChange, 15000); 
+   story_time = setTimeout(storySlidesChange, 15000); 
 }
 
 //--- Recursively Calls 'storySlidesChange()'
 storySlidesChange();
+
+
+//--- Story Slides Client Controls
+story_slide_marker.forEach(element => {
+   element.addEventListener('click', () => {
+      let marked_num = element.id.slice(19);
+      
+      story_index = marked_num-1;
+      clearTimeout(story_time);
+      storySlidesChange();
+   });
+});

@@ -43,3 +43,18 @@ div#big_big > p{
 div#seriousness > p{
    font-size: 2.5em;
 }
+
+#making_result > h3{
+   font-size: 3.8vw;
+}
+
+footer{
+   height: calc(2vw + 3em);
+}
+
+footer > p{
+   font-size: 1.2vw;
+}
+footer > p > b{
+   font-size: 1.2vw;
+}

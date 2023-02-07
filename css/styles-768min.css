@@ -24,6 +24,13 @@ nav > ul > li{
    transition: .7s ease-out;
 }
 
+nav > ul > li > a{
+   font-family: 'mySansSerif_3';
+   font-size: 1.1em;
+   text-decoration: none;
+   color: var(--mygrey);
+}
+
 #nav_li_1{
    margin-left: 10px;
 }

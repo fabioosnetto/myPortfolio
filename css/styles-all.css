@@ -409,7 +409,7 @@ div#joker{
    border-style: solid none;
    border-width: .5vw 0vw;
    border-color: var(--myred) transparent;
-   border-image: linear-gradient(to right, var(--mygrey), var(--myorange), var(--myred));
+   border-image: var(--myred);
    border-image-slice: 44;
    border-radius: 10px;
 
@@ -643,11 +643,57 @@ div#pfct_txt_container > p{
 
 article#story{
    background-color: black;
+
+   flex-direction: column;
+   align-items: center;
+
    margin: auto;
    position: relative;
    max-height: 700px;
    height: 75vw;
    overflow-x: hidden;
+}
+
+#story_slide_marker_container{
+   height: 1em;
+   width: 7em;
+   position: absolute;
+   bottom: 1em;
+
+   justify-content: space-between;
+}
+
+.story_slide_marker{
+   height: .6em;
+   width: .6em;
+   background-color: var(--mygrey);
+
+   border-radius: 50%;
+   position: relative;
+
+   cursor: pointer;
+}
+
+.story_slide_marked::before{
+   content: "";
+
+   position: absolute;
+   top: -3px;
+   right: -3px;
+   bottom: -3px;
+   left: -3px;
+
+   border-radius: 50%;
+   border: 1px solid white;
+   
+   transition: 1s ease;
+}
+
+.story_slide_marker:hover{
+   height: 0.9em;
+   width: 0.9em;
+
+   background-color: white;
 }
 
 article#story > section > div > p{
@@ -1208,17 +1254,28 @@ section#skills{
 }
 
 #making_result{
-   max-height: 800px;
-   height: 85vw;
    position: relative;
 
    flex-direction: column;
    justify-content: space-between;
 }
 
+#making_result > h3{
+   font-family: 'myCursive_1';
+   font-size: 6.6vw;
+   padding: .5em;
+   text-indent: 1em;
+
+   margin: 2em 0em 1em 0em;
+   border: 1px solid var(--myred);
+   border-left: none;
+   border-right: none;
+   text-shadow: .1vw .1vw 3vw var(--mygrey);
+}
+
 #projects_container_parallax{
-   max-height: 700px;
-   height: 75vw;
+   max-height: 666px;
+   height: 85vw;
    width: 100vw;
    position: relative;
    
@@ -1282,8 +1339,8 @@ section#skills{
 }
 
 .project_txt{
-   max-height: 700px;
-   height: 75vw;
+   max-height: 666px;
+   height: 85vw;
    width: 100vw;
 
    display: flex;
@@ -1308,10 +1365,58 @@ section#skills{
    padding: 1.5em;
 }
 
+
+#projects_slide_marker_container{
+   background-color: var(--myblack);
+   height: 1.2em;
+   width: 7.5em;
+   position: absolute;
+   bottom: 1em;
+
+   align-self: center;
+   align-items: center;
+   justify-content: space-evenly;
+
+   border-radius: 10px;
+}
+
+.project_slide_marker{
+   height: .6em;
+   width: .6em;
+   background-color: var(--mygrey);
+
+   border-radius: 50%;
+   position: relative;
+
+   /*cursor: pointer;*/
+}
+
+.project_slide_marked::before{
+   content: "";
+
+   position: absolute;
+   top: -3px;
+   right: -3px;
+   bottom: -3px;
+   left: -3px;
+
+   border-radius: 50%;
+   border: 1px solid var(--myred);
+   
+   transition: 1s ease;
+}
+
+/*.project_slide_marker:hover{
+   height: 0.9em;
+   width: 0.9em;
+
+   background-color: white;
+}*/
+
 #other_achievements{
    background-color: black;
    position: relative;
-   
+   display: none;
    z-index: 2;
 }
 
@@ -1323,14 +1428,24 @@ section#disadvantages{
    background-color: var(--myorange);
    max-width: 850px;
    margin: auto;
+
+   display: none;
 }
 
 footer{
-   height: 10vh;
+   height: calc(5em);
    background-color: var(--clrFooterBG);
    color: var(--clrFooterF);
 }
 
-footer > p, footer > p > b{
+footer > p{
    font-family: 'mySerif_1';
+   font-size: 1em;
+   text-align: center;
+   padding: 1.5em;
+}
+
+footer > p > b{
+   font-family: 'mySerif_1';
+   font-size: 1em;
 }

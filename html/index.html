@@ -44,8 +44,8 @@
             <ul>
                <li id="nav_li_1">Who Am I?</li>
                <li id="nav_li_2">Goals</li>
-               <li id="nav_li_3">Skills</li>
-               <li id="nav_li_4">Contact Me</li>
+               <li id="nav_li_3"><a href="#skills" rel="nofollow" target="_self">Skills</a></li>
+               <li id="nav_li_4"><a href="contact_me.html" rel="nofollow" target="_blank">Contact Me</a></li>
             </ul>
          </nav>
       </div>
@@ -133,6 +133,7 @@
                   <button id="char_back" class="char_button" type="button" onclick="charButtonClick('back')"><span class="material-symbols-outlined">arrow_back_ios</span></button>
             
                   <button id="char_forward" class="char_button" type="button" onclick="charButtonClick('forward')"><span class="material-symbols-outlined">arrow_forward_ios</span></button>
+
                   <div id="slideMK_container" class="display_flex">
                      <div id="mk_1" class="slide_marker"></div>
                      <div id="mk_2" class="slide_marker"></div>
@@ -141,7 +142,7 @@
                </div>
             </article>
 
-            <article id="story">
+            <article id="story" class="display_flex">
                <section id="story_1" class="story_container display_flex">
                   <div id="story_1_txt" class="display_flex">
                      <p id="story_1_txt_1" class="txt_marker">
@@ -189,6 +190,14 @@
                      </p>
                   </div>
                </section>
+
+               <div id="story_slide_marker_container" class="display_flex">
+                  <div id="story_slide_marker_1" class="story_slide_marker"></div>
+                  <div id="story_slide_marker_2" class="story_slide_marker"></div>
+                  <div id="story_slide_marker_3" class="story_slide_marker"></div>
+                  <div id="story_slide_marker_4" class="story_slide_marker"></div>
+                  <div id="story_slide_marker_5" class="story_slide_marker"></div>
+               </div>
             </article>
 
             <section id="skills">
@@ -343,7 +352,7 @@
                         
                         <div class="project_txt">
                            <p>
-                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic est molestiae ipsa soluta cum ducimus totam illo ipsum veritatis quod ullam dolorem consequatur, facere magnam adipisci sit. Delectus, aut tempora.
+                              <b>My First Web</b> Site made: [...]
                            </p>
                         </div>
                      </div>
@@ -353,7 +362,6 @@
 
                         <div class="project_txt">
                            <p>
-                              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur quidem nisi nemo tempora amet omnis debitis recusandae excepturi asperiores culpa magnam cupiditate obcaecati voluptate voluptas molestiae assumenda, minima temporibus veniam?
                            </p>
                         </div>
                      </div>
@@ -403,6 +411,16 @@
                         </div>
                      </div>
                   </div>
+
+                  <div id="projects_slide_marker_container" class="display_flex">
+                     <div class="project_slide_marker project_slide_marked"></div>
+                     <div class="project_slide_marker"></div>
+                     <div class="project_slide_marker"></div>
+                     <div class="project_slide_marker"></div>
+                     <div class="project_slide_marker"></div>
+                     <div class="project_slide_marker"></div>
+                     <div class="project_slide_marker"></div>
+                  </div>
                </div>
 
                <div id="other_achievements">
@@ -440,8 +458,8 @@
          </div>
       </main>
 
-      <footer>
-         <p>2022 - Website Created by <b>Fabio O.S. Netto</b></p>
+      <footer id="footer">
+         <p>2023 - Website Created by <b>Fabio O.S. Netto</b></p>
       </footer>
    </body>
 
