@@ -14,6 +14,11 @@ section#intro_banner{
    height: 90vw;
 }
 
+div#intro_banner_bg{
+   bottom: unset;
+   top: -10vw;
+}
+
 #courses_list > li{
    flex: 45%;
    height: 45vw;
